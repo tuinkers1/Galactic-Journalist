@@ -18,5 +18,6 @@
   ],
   "ResourceOrderSettings": [
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"spr_player_up","order":2,"path":"sprites/spr_player_up/spr_player_up.yy",},
   ],
 }
