@@ -17,9 +17,15 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"Sample_room","order":1,"path":"rooms/Sample_room/Sample_room.yy",},
     {"name":"spr_player_down","order":2,"path":"sprites/spr_player_down/spr_player_down.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
+    {"name":"transistion_tile","order":18,"path":"sprites/transistion_tile/transistion_tile.yy",},
+    {"name":"transiton_tile","order":2,"path":"objects/transiton_tile/transiton_tile.yy",},
+    {"name":"spr_solid","order":17,"path":"sprites/spr_solid/spr_solid.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"spr_template","order":3,"path":"sprites/spr_template/spr_template.yy",},
+    {"name":"Sprite5","order":16,"path":"sprites/Sprite5/Sprite5.yy",},
     {"name":"spr_player_up","order":2,"path":"sprites/spr_player_up/spr_player_up.yy",},
   ],
 }
