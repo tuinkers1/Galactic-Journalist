@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 // keyboard input detection - rachel
 var left= keyboard_check(ord("A")) || keyboard_check(vk_left);
 var right= keyboard_check(ord("D")) || keyboard_check(vk_right);
@@ -44,3 +45,4 @@ else if (jump)
 {
 	v_move = player_jumpspeed
 }
+
