@@ -11,6 +11,11 @@ var down = keyboard_check(vk_down) || keyboard_check(ord("S"))
 var grounded = place_meeting(x,y+5,obj_solid)
 var dashing = keyboard_check(vk_shift)
 
+
+
+// temp ingame changing code
+
+
 // basic movement and gravity - rachel
 // calculate  movement
 if dashduration ==0
@@ -31,6 +36,12 @@ while(not place_meeting(x,y+sign(v_move),obj_solid))
 	y += sign(v_move);
 }
 	v_move = 0;
+}
+
+// collison with death barrier - rachel
+if place_meeting(x,y,obj_die){
+	x= 200
+	y = 4500
 }
 
 
@@ -69,3 +80,5 @@ if dashduration == 1{
 h_move =0
 v_move =0
 }
+
+
