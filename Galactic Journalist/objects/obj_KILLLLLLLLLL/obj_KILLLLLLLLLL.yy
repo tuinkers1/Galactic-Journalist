@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "transiton_tile",
+  "name": "obj_KILLLLLLLLLL",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "transistion_tile",
-    "path": "sprites/transistion_tile/transistion_tile.yy",
+    "name": "KILL_TILE",
+    "path": "sprites/KILL_TILE/KILL_TILE.yy",
   },
   "spriteMaskId": null,
   "visible": true,
