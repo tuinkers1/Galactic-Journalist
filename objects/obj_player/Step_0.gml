@@ -134,3 +134,4 @@ var _inst = instance_create_layer(x, y, "Collision", obj_flash);
 // movement
 x += h_move
 y += round(v_move)
+min(abs(h_move
