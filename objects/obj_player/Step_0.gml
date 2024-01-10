@@ -28,7 +28,7 @@ if grounded{
 	dashallowed = true
 }
  if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) {
-	dashduration = 20
+	dashduration = 15
 	dashallowed = false
 	dashdirection = point_direction(0, 0, right-left, down-up)
 	h_move = lengthdir_x(dashspeed, dashdirection)
@@ -119,11 +119,6 @@ if v_move < 0 and !jump_held and dashallowed = true {
 v_move = max(v_move, player_jumpspeed/4);
 	}
 }
-
-
-
-
-
 
 
 // wall jump - Iveta 

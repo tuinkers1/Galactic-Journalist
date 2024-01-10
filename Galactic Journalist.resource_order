@@ -38,7 +38,7 @@
     {"name":"spr_solid","order":10,"path":"sprites/spr_solid/spr_solid.yy",},
     {"name":"obj_ladder","order":12,"path":"objects/obj_ladder/obj_ladder.yy",},
     {"name":"spr_ladder","order":16,"path":"sprites/spr_ladder/spr_ladder.yy",},
-    {"name":"obj_flash","order":13,"path":"objects/obj_flash/obj_flash.yy",},
+    {"name":"obj_flash","order":14,"path":"objects/obj_flash/obj_flash.yy",},
     {"name":"obj_button_controls","order":5,"path":"objects/obj_button_controls/obj_button_controls.yy",},
     {"name":"spr_purp","order":11,"path":"sprites/spr_purp/spr_purp.yy",},
     {"name":"rm_controlmenu","order":3,"path":"rooms/rm_controlmenu/rm_controlmenu.yy",},
