@@ -120,6 +120,22 @@ v_move = max(v_move, player_jumpspeed/4);
 	}
 }
 
+//ladder - eddy
+if (place_meeting(x, y, obj_ladder)){
+	OnLadder = true	
+}
+else{
+	OnLadder = false
+}
+
+if (OnLadder){
+	//negating gravity
+	v_move = 0 
+	
+	if (up == 1) v_move = -walkSpeed
+	if (down == 1) v_move = walkSpeed
+
+}
 
 // wall jump - Iveta 
 if (jump) && (place_meeting(x+1,y,obj_solid)) && walljumped == false  || jump && (place_meeting(x-1,y,obj_solid)) && walljumped == false

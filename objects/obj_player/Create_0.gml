@@ -15,6 +15,7 @@ coyote_counter = 0
 coyote_max = 5
 jumped = true 
 walljumped = true 
+OnLadder = false;
 
 
 
