@@ -37,6 +37,7 @@ if grounded{
 if dashduration > 0 {
 	dashduration -= 1
 }
+
 if dashduration == 1{
 h_move = 0
 v_move = 0
@@ -45,9 +46,10 @@ v_move = 0
 
 // basic movement and gravity - rachel
 // calculate  movement
-if dashduration ==0
-h_move = (right - left) * walkSpeed;
-
+if dashduration == 0 {
+	h_move = (right - left) * walkSpeed;
+		
+}
 // collision
 if place_meeting(x+h_move,y,obj_solid){
 while(not place_meeting(x + sign(h_move),y,obj_solid))
@@ -137,15 +139,43 @@ if (OnLadder){
 
 }
 
-// wall jump - Iveta 
-if (jump) && (place_meeting(x+1,y,obj_solid)) && walljumped == false  || jump && (place_meeting(x-1,y,obj_solid)) && walljumped == false
-{ 
-v_move = player_jumpspeed
-walljumped = true
+// WALL DETECTION TO RIGHT
+
+if (place_meeting(x+1, y, obj_solid)) {
+	wall_direction = 1
 }
 
-if grounded {
-walljumped = false	
+// WALL DETECTION TO LEFT
+
+if (place_meeting(x-1, y, obj_solid)) {
+	wall_direction = -1
+}
+
+// NO WALL DETECTION
+
+if (!place_meeting(x-1 or x+1, y, obj_solid)) {
+	wall_direction = 0
+}
+
+// WALL STICK
+
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+	if (v_move) > 1 {
+		v_move = 1
+	}
+}
+
+// wall jump - Iveta/Renardo
+
+if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
+	if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) {
+		h_move = walljump_force * wall_direction * -1;
+		v_move = -5;
+		walljumping_state = true;
+		grounded = false;
+		jumped = true;
+		alarm[0] = 30
+	}
 }
 
 // if ability is pressed, spawn obj_ability - eddy
