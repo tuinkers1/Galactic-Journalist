@@ -18,3 +18,8 @@ if !sprite_exists(global.old_lvl)
 }
 */
 // simple transition - rachel
+if place_meeting(x,y,obj_player){
+room_goto(targetroom)
+other.x = targetx
+other.y = targety
+}
