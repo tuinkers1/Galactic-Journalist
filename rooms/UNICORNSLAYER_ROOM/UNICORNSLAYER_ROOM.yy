@@ -704,7 +704,6 @@
     {"name":"inst_3E51DF34","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},
     {"name":"inst_217A3BD7","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},
     {"name":"inst_35996255","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},
-    {"name":"inst_18C99D1B","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},
     {"name":"inst_71C9998D","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},
   ],
   "isDnd": false,
@@ -1367,7 +1366,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_523622A2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":440.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AA736CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":232.0,"y":360.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27558DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":368.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18C99D1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"transiton_tile","path":"objects/transiton_tile/transiton_tile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":136.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71C9998D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_activation","path":"objects/obj_activation/obj_activation.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":640.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"spikes","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
