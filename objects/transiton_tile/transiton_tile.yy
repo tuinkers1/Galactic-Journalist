@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Placeholders (Niels)",
+    "path": "folders/Objects/Placeholders (Niels).yy",
   },
   "parentObjectId": null,
   "persistent": true,
