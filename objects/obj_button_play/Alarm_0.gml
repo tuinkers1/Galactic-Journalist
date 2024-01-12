@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(UNICORNSLAYER_ROOM);
+room_goto(rm_desert1);
