@@ -14,9 +14,7 @@ max_buffer = 5
 coyote_counter = 0
 coyote_max = 5
 jumped = true 
-walljumped = true 
 OnLadder = false;
-
-
-
-
+walljump_force = 12;
+wall_direction = 0;
+walljumping_state = false;
