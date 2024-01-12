@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // room transition camera on hold for now - rachel
-
+/*
 if !sprite_exists(global.old_lvl)
 { 
 	var surface_ = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
@@ -16,3 +16,5 @@ if !sprite_exists(global.old_lvl)
 	show_debug_message(global.old_lvl);
 
 }
+*/
+// simple transition - rachel

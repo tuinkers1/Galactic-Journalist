@@ -73,8 +73,8 @@ while(not place_meeting(x,y+sign(v_move),obj_solid))
 
 // collison with death barrier - rachel
 if place_meeting(x,y,obj_die){
-	x= 55
-	y = 680
+	x= obj_respawnpointph
+	y = obj_respawnpointph
 }
 
 
@@ -181,7 +181,10 @@ if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
 var _inst = instance_create_layer(x, y, "Collision", obj_flash);
+
 } 
+
+
 
 
 // movement
