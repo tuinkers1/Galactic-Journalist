@@ -46,9 +46,13 @@ v_move = 0
 
 // basic movement and gravity - rachel
 // calculate  movement
-if dashduration == 0 {
+if dashduration == 0 && grounded {
+	walkSpeed = 2
 	h_move = (right - left) * walkSpeed;
-		
+}
+	if dashduration == 0 && !grounded {
+	walkSpeed = 0.6
+	h_move = (right - left) * walkSpeed ;
 }
 // collision
 if place_meeting(x+h_move,y,obj_solid){

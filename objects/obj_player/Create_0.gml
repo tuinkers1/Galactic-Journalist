@@ -6,7 +6,7 @@ walkSpeed = 1.2
 h_move = 0
 
 // Vertical movement
-player_grav = 0.12
+player_grav = 0.04
 player_jumpspeed = -2.45
 v_move = 0
 
