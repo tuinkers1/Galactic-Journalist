@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*
+
 roomtransside = "up"
 global.old_lvl = -1
+global.trans_counter = 1
 
 targetroom = -1
 targetx = -1

@@ -11,8 +11,8 @@ player_jumpspeed = -2.45
 v_move = 0
 
 //quicksand
-player_sink_speed = .5;
-player_jumpspeed_quicksand = -10;
+player_sink_speed = .25;
+player_jumpspeed_quicksand = -0.5;
 
 // Dash
 dashallowed = true
@@ -37,3 +37,11 @@ walljumping_state = false;
 
 // testing 
 x_ = 0
+
+// transition
+transwidth = 0
+
+camposv = 0
+camposh = 0
+
+global.transtime = 500

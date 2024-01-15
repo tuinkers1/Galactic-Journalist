@@ -66,7 +66,6 @@ h_move = 0
 
 
 
-//Dynamic jump height - Niels
 
 
 
@@ -79,6 +78,7 @@ if place_meeting(x,y,obj_die){
 
 if grounded {
 	jumped = false
+	
 }
 else{ 
 	if coyote_counter == 0 {
@@ -116,8 +116,8 @@ if counter_buffer > 0 {
 		jumped = true
 	}
 		//Dynamic jump height - Niels
-if v_move < 0 and !jump_held and dashallowed = true {
-v_move = max(v_move, player_jumpspeed/4);
+if v_move < 0 and !jump_held && dashallowed = true{
+v_move = max(v_move, player_jumpspeed/8);
 	}
 }
 
@@ -184,7 +184,7 @@ var _inst = instance_create_layer(x, y, "Collision", obj_flash);
 } 
 
 // Quick quicksand effect
-if (place_meeting(x, y + 1, obj_quicksandph)) {
+if (place_meeting(x, y + 1, obj_quicksandph))  {
     v_move = player_sink_speed;
     // We are on the quicksand
     if (jump) {
@@ -223,6 +223,10 @@ if (vcollide != noone)
 else
 grounded = false;
 y += v_move
+
+
+
+
 /*
 draw_rectangle_colour(-200, 200, 2000, -200, c_black, c_black, c_black, c_black, false);
 draw_sprite_stretched(global.old_lvl,0,0,0,500,500)
