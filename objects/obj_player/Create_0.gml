@@ -10,6 +10,10 @@ player_grav = 0.04
 player_jumpspeed = -2.45
 v_move = 0
 
+//quicksand
+player_sink_speed = .5;
+player_jumpspeed_quicksand = -10;
+
 // Dash
 dashallowed = true
 dashduration = 0

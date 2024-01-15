@@ -183,7 +183,15 @@ var _inst = instance_create_layer(x, y, "Collision", obj_flash);
 
 } 
 
-
+// Quick quicksand effect
+if (place_meeting(x, y + 1, obj_quicksandph)) {
+    v_move = player_sink_speed;
+    // We are on the quicksand
+    if (jump) {
+        // Jump
+        v_move = player_jumpspeed_quicksand;
+    }
+}
 
 
 // movement
@@ -214,7 +222,7 @@ if (vcollide != noone)
 }
 else
 grounded = false;
-y += round(v_move);
+y += v_move
 /*
 draw_rectangle_colour(-200, 200, 2000, -200, c_black, c_black, c_black, c_black, false);
 draw_sprite_stretched(global.old_lvl,0,0,0,500,500)
