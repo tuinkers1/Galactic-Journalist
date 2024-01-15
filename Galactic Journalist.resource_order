@@ -1,6 +1,10 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"obj_semisolid","order":4,"path":"objects/obj_semisolid/obj_semisolid.yy",},
+    {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
+    {"name":"obj_par_solid","order":3,"path":"objects/obj_par_solid/obj_par_solid.yy",},
+    {"name":"transiton_tile","order":2,"path":"objects/transiton_tile/transiton_tile.yy",},
     {"name":"obj_dialog_par","order":1,"path":"objects/obj_dialog_par/obj_dialog_par.yy",},
   ],
 }

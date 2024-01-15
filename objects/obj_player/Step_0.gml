@@ -8,7 +8,7 @@ var jump_held = keyboard_check(vk_up) || keyboard_check(vk_space);
 var jump = keyboard_check_pressed(vk_up) || keyboard_check(vk_space);
 var up = keyboard_check(vk_up) || keyboard_check(ord("W"))
 var down = keyboard_check(vk_down) || keyboard_check(ord("S"))
-var grounded = place_meeting(x,y+1,obj_solid)
+var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check(vk_shift)
 var flash = keyboard_check(ord("F"))
 
@@ -24,7 +24,7 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 
 
 // dashing - rachel
-if grounded{
+if grounded && !place_meeting(x+2,y,obj_par_solid){
 	dashallowed = true
 }
  if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) {
@@ -63,13 +63,8 @@ while(not place_meeting(x + sign(h_move),y,obj_solid))
 
 h_move = 0
 }
-if place_meeting(x,y+v_move,obj_solid){
-while(not place_meeting(x,y+sign(v_move),obj_solid))
-{
-	y += sign(v_move);
-}
-	v_move = 0;
-}
+
+
 
 //Dynamic jump height - Niels
 
@@ -193,5 +188,33 @@ var _inst = instance_create_layer(x, y, "Collision", obj_flash);
 
 // movement
 x += round(h_move)
-y += round(v_move)
 
+// Vertical collision accounting for semisolids
+var vcollide;
+vcollide = instance_place(x,y+v_move,obj_par_solid);
+if (vcollide != noone)
+{
+    if ((vcollide).type == 1)
+    {
+        while (!place_meeting(x,y+sign(v_move), obj_par_solid))
+        y+=sign(v_move);
+        v_move = 0;
+        grounded = true;
+    }
+    if (((vcollide).type == 2) && sign(v_move) == 1)
+    {
+        if (!place_meeting(x,y,obj_par_solid))
+        {
+            while (!place_meeting(x,y+sign(v_move),obj_par_solid))
+            y += 1;
+            v_move = 0;
+            grounded = false
+        }
+    }
+}
+else
+grounded = false;
+y += round(v_move);
+/*
+draw_rectangle_colour(-200, 200, 2000, -200, c_black, c_black, c_black, c_black, false);
+draw_sprite_stretched(global.old_lvl,0,0,0,500,500)

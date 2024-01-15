@@ -30,3 +30,6 @@ OnLadder = false;
 walljump_force = 12;
 wall_direction = 0;
 walljumping_state = false;
+
+// testing 
+x_ = 0
