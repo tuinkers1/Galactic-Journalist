@@ -2,13 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 // SCRIPT
 
-/*
-function scr_dialog() constructor {
+
+function Dialog() constructor {
 	
 	_dialogs = [];
 	
 	add = function(_sprite, _message) {
-		array_push(_dialogs {
+		array_push(_dialogs, {
 			sprite: _sprite,
 			message: _message,
 		});
@@ -25,4 +25,4 @@ function scr_dialog() constructor {
 		return array_length(_dialogs);
 	}
 }
-*/
+

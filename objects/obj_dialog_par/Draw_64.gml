@@ -3,7 +3,7 @@
 
 // RAW GUI
 
-/*
+
 if(showing_dialog == true) {
 	var text_x = 30;
 	var text_y = 30;
@@ -11,7 +11,7 @@ if(showing_dialog == true) {
 	var border = 5;
 	var padding = 16;
 	
-	height = string_height(current_dialogue.message);
+	height = string_height(current_dialog.message);
 	
 	if(sprite_get_height(current_dialog.sprite) > height) {
 		height = sprite_get_height(current_dialog.sprite);
@@ -42,4 +42,3 @@ if(showing_dialog == true) {
 }
 
 draw_set_alpha(1)
-*/
