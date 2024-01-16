@@ -1,11 +1,19 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"NPC","order":2,"path":"folders/Objects/NPC.yy",},
+    {"name":"NPC","order":1,"path":"folders/Sprites/NPC.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"obj_semisolid","order":4,"path":"objects/obj_semisolid/obj_semisolid.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
+    {"name":"obj_NPC_Albert_dialog_2","order":2,"path":"objects/obj_NPC_Albert_dialog_2/obj_NPC_Albert_dialog_2.yy",},
+    {"name":"fnt_dialog","order":1,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
     {"name":"obj_par_solid","order":3,"path":"objects/obj_par_solid/obj_par_solid.yy",},
+    {"name":"spr_player_portrait","order":2,"path":"sprites/spr_player_portrait/spr_player_portrait.yy",},
     {"name":"obj_transiton_tile","order":2,"path":"objects/obj_transiton_tile/obj_transiton_tile.yy",},
+    {"name":"obj_NPC_Albert","order":1,"path":"objects/obj_NPC_Albert/obj_NPC_Albert.yy",},
     {"name":"spr_player26","order":1,"path":"sprites/spr_player26/spr_player26.yy",},
     {"name":"obj_dialog_par","order":1,"path":"objects/obj_dialog_par/obj_dialog_par.yy",},
+    {"name":"spr_NPC_Albert_portrait","order":2,"path":"sprites/spr_NPC_Albert_portrait/spr_NPC_Albert_portrait.yy",},
   ],
 }

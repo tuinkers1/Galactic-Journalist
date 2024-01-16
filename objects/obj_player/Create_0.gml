@@ -31,7 +31,7 @@ coyote_max = 5
 // Walljump
 jumped = true 
 OnLadder = false;
-walljump_force = 12;
+walljump_force = 20;
 wall_direction = 0;
 walljumping_state = false;
 
@@ -40,6 +40,10 @@ x_ = 0
 
 // transition
 transwidth = 0
+
+// Dialog status
+
+dialogstatus = false;
 
 camposv = 0
 camposh = 0
