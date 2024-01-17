@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Set depth
+
+depth = y
 // Vertical movement
 walkSpeed = 1.2
 h_move = 0
