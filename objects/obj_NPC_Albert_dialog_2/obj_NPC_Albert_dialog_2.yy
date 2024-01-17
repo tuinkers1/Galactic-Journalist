@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Objects/NPC.yy",
+    "name": "Albert",
+    "path": "folders/Objects/NPC/Albert.yy",
   },
   "parentObjectId": {
     "name": "obj_dialog_par",

@@ -227,7 +227,6 @@ y += v_move
 
 // Checks whather player is in dialog and stop movement.
 
-
 /*
 draw_rectangle_colour(-200, 200, 2000, -200, c_black, c_black, c_black, c_black, false);
 draw_sprite_stretched(global.old_lvl,0,0,0,500,500)
