@@ -14,6 +14,7 @@ var flash = keyboard_check(ord("F"))
 
 
 
+
 // temp ingame changing code
 
 //air gravity
@@ -224,7 +225,7 @@ else
 grounded = false;
 y += v_move
 
-
+// Checks whather player is in dialog and stop movement.
 
 
 /*
