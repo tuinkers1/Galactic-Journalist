@@ -45,16 +45,20 @@ if (jump) {
 		v_move = player_jumpspeed_quicksand;	
 	}
 	if (!on_solid and !on_quicksand and on_wall) {
-		if (facing == -1) {
+		 if (facing == -1) {
 			// Push to the right
+			h_move = 28 - walljump_force;
 			show_debug_message("Push to the right.");
-		}
+		 }
+	if (!on_solid and !on_quicksand and on_wall) {
 		if (facing == 1) {
-			// Push to the left	
+			// Push to the left
+			h_move = -28 + walljump_force;
 			show_debug_message("Push to the left.");
 		}
 		
 		v_move = player_jumpspeed;	
+		}
 	}
 }
 
