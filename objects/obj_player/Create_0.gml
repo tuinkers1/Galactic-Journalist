@@ -34,9 +34,10 @@ coyote_max = 5
 // Walljump
 jumped = true 
 OnLadder = false;
-walljump_force = 20;
+walljump_force = 60;
 wall_direction = 0;
 walljumping_state = false;
+walljumped = false;
 
 // testing 
 x_ = 0

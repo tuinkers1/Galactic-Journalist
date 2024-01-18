@@ -117,7 +117,7 @@ if counter_buffer > 0 {
 		jumped = true
 	}
 		//Dynamic jump height - Niels
-if v_move < 0 and !jump_held && dashallowed = true{
+if v_move < 0 and !jump_held && dashallowed = true {
 v_move = max(v_move, player_jumpspeed/8);
 	}
 }
@@ -148,18 +148,20 @@ if (place_meeting(x+1, y, obj_solid)) {
 // WALL DETECTION TO LEFT
 
 if (place_meeting(x-1, y, obj_solid)) {
-	wall_direction = -1
+	wall_direction = -1;
+	walljumped = false;
 }
 
 // NO WALL DETECTION
 
 if (!place_meeting(x-1 or x+1, y, obj_solid)) {
-	wall_direction = 0
+	wall_direction = 0;
+	walljumped = false;
 }
 
 // WALL STICK
 
-if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {;
 	if (v_move) > 1 {
 		v_move = 1
 	}
@@ -168,13 +170,12 @@ if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true 
 // wall jump - Iveta/Renardo
 
 if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
-	if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) {
-		h_move = walljump_force * wall_direction * -1;
+	if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) && (walljumped = false) {
+		h_move -= walljump_force * wall_direction * 0.42;
 		v_move = -5;
 		walljumping_state = true;
-		grounded = false;
-		jumped = true;
-		alarm[0] = 30
+		walljumped = true;
+		alarm[0] = 42
 	}
 }
 
