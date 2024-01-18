@@ -65,11 +65,6 @@ while(not place_meeting(x + sign(h_move),y,obj_solid))
 h_move = 0
 }
 
-
-
-
-
-
 // collison with death barrier - rachel
 if place_meeting(x,y,obj_die){
 	x= obj_respawnpointph
@@ -101,9 +96,6 @@ else
 {
 	coyote_counter = coyote_max
 }
-
-	
-
 
 //input buffering and jump - Rachel
 if jump{
@@ -139,43 +131,64 @@ if (OnLadder){
 
 }
 
-// WALL DETECTION TO RIGHT
+#region//Airborne status.
 
-if (place_meeting(x+1, y, obj_solid)) {
-	wall_direction = 1
+if airborne_count > 24 {
+	airborne = true;
+	show_debug_message("Airborne.")
 }
-
-// WALL DETECTION TO LEFT
-
-if (place_meeting(x-1, y, obj_solid)) {
-	wall_direction = -1;
-	walljumped = false;
+if (airborne_count < 24) {
+	airborne = false;
+	show_debug_message("Not airborne.")
 }
+#endregion
 
 // NO WALL DETECTION
 
 if (!place_meeting(x-1 or x+1, y, obj_solid)) {
 	wall_direction = 0;
-	walljumped = false;
+	show_debug_message("No wall.")
+	airborne_count += 1;
+	//walljumped = false;
+}
+
+// WALL DETECTION TO RIGHT
+
+if (place_meeting(x+1, y, obj_solid)){
+	wall_direction = 1
+	show_debug_message("Right wall.");
+	airborne = 0;
+}
+
+// WALL DETECTION TO LEFT
+
+if (place_meeting(x-1, y, obj_solid)){
+	wall_direction = -1;
+	show_debug_message("Left wall.");
+	airborne = 0;
+	//walljumped = false;
 }
 
 // WALL STICK
 
-if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {;
-	if (v_move) > 1 {
-		v_move = 1
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+	if (airborne = false) {
+		if (v_move) > 0.5 {
+			v_move = 0.5;
+		}
 	}
 }
 
 // wall jump - Iveta/Renardo
-
-if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
-	if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) && (walljumped = false) {
-		h_move -= walljump_force * wall_direction * 0.42;
-		v_move = -5;
-		walljumping_state = true;
-		walljumped = true;
-		alarm[0] = 42
+if (airborne != true) {
+	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
+		if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) && (walljumped = false) {
+			walljumping_state = true;
+			walljumped = true;
+			h_move -= walljump_force * wall_direction * 0.20;
+			v_move += player_jumpspeed;
+			alarm[0] = 7;
+		}
 	}
 }
 
