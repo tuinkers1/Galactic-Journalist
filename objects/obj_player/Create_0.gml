@@ -4,13 +4,14 @@
 //Set depth
 
 depth = y
-// Vertical movement
+// Horizontal movement
 walkSpeed = 1.2
 h_move = 0
+facing = 1;
 
 // Vertical movement
-player_grav = 0.04
-player_jumpspeed = -2.45
+player_grav = 0.2
+player_jumpspeed = -4
 v_move = 0
 
 //quicksand
