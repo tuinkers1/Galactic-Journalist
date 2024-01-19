@@ -14,7 +14,11 @@
     {"name":"obj_NPC_Albert_dialog_2","order":2,"path":"objects/obj_NPC_Albert_dialog_2/obj_NPC_Albert_dialog_2.yy",},
     {"name":"spr_NPC_empty_portrait","order":3,"path":"sprites/spr_NPC_empty_portrait/spr_NPC_empty_portrait.yy",},
     {"name":"obj_NPC_Albert_dialog_random","order":4,"path":"objects/obj_NPC_Albert_dialog_random/obj_NPC_Albert_dialog_random.yy",},
+<<<<<<< Updated upstream
     {"name":"obj_background_move","order":3,"path":"objects/obj_background_move/obj_background_move.yy",},
+=======
+    {"name":"spr_dialog_bubble","order":3,"path":"sprites/spr_dialog_bubble/spr_dialog_bubble.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_button_exit","order":1,"path":"sprites/spr_button_exit/spr_button_exit.yy",},
     {"name":"fnt_dialog","order":1,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
     {"name":"obj_Hspring","order":2,"path":"objects/obj_Hspring/obj_Hspring.yy",},
@@ -29,9 +33,13 @@
     {"name":"spr_upspring","order":4,"path":"sprites/spr_upspring/spr_upspring.yy",},
     {"name":"obj_dialogstatus_global","order":2,"path":"objects/obj_dialogstatus_global/obj_dialogstatus_global.yy",},
     {"name":"obj_dialog_par","order":1,"path":"objects/obj_dialog_par/obj_dialog_par.yy",},
+<<<<<<< Updated upstream
     {"name":"spr_Hspring","order":5,"path":"sprites/spr_Hspring/spr_Hspring.yy",},
     {"name":"obj_flash","order":1,"path":"objects/obj_flash/obj_flash.yy",},
     {"name":"obj_SpringActivation1","order":5,"path":"objects/obj_SpringActivation1/obj_SpringActivation1.yy",},
+=======
+    {"name":"obj_dialog_bubble","order":3,"path":"objects/obj_dialog_bubble/obj_dialog_bubble.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_NPC_Albert_portrait","order":2,"path":"sprites/spr_NPC_Albert_portrait/spr_NPC_Albert_portrait.yy",},
     {"name":"spr_flash","order":1,"path":"sprites/spr_flash/spr_flash.yy",},
   ],
