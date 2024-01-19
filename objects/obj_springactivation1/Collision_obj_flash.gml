@@ -7,7 +7,7 @@ if not activated {
 		instance_create_layer(x, y, "Instances", obj_upspring);
 	}
 
-
 }
 
 activated = true;
+

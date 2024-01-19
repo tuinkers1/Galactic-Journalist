@@ -116,7 +116,7 @@ v_move = max(v_move, player_jumpspeed/8);
 
 // vertical spring mechanic - eddy
 if place_meeting(x, y, obj_upspring){
-	v_move = -3.3
+	v_move = -2.3
 }
 
 // horizontal spring mechanic - eddy & niels
@@ -223,8 +223,7 @@ if (airborne != true) {
 
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
-var _inst = instance_create_layer(x, y, "Collision", obj_flash);
-
+var _inst = instance_create_layer(x, y, "Instances", obj_flash);
 } 
 
 // Quick quicksand effect
