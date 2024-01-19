@@ -5,12 +5,12 @@
 
 depth = y
 // Vertical movement
-walkSpeed = 1.2
+walkSpeed = 0.1
 h_move = 0
 
 // Vertical movement
-player_grav = 0.04
-player_jumpspeed = -2.45
+player_grav = 0.06
+player_jumpspeed = -1.75
 v_move = 0
 
 //quicksand

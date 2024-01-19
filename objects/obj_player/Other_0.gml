@@ -8,7 +8,7 @@ x= obj_respawnpointph
 
 
 
-*/
+
 
 
 

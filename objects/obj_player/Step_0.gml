@@ -48,11 +48,11 @@ v_move = 0
 // basic movement and gravity - rachel
 // calculate  movement
 if dashduration == 0 && grounded {
-	walkSpeed = 2
+	walkSpeed = 1.2
 	h_move = (right - left) * walkSpeed;
 }
 	if dashduration == 0 && !grounded {
-	walkSpeed = 0.6
+	walkSpeed = 0.7
 	h_move = (right - left) * walkSpeed ;
 }
 // collision
@@ -161,7 +161,7 @@ if (!place_meeting(x-1 or x+1, y, obj_solid)) {
 
 // WALL STICK
 
-if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {;
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
 	if (v_move) > 1 {
 		v_move = 1
 	}
@@ -197,7 +197,7 @@ if (place_meeting(x, y + 1, obj_quicksandph))  {
 
 
 // movement
-x += round(h_move)
+x += h_move
 
 // Vertical collision accounting for semisolids
 var vcollide;
