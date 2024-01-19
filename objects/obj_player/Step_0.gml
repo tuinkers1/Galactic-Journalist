@@ -114,6 +114,35 @@ v_move = max(v_move, player_jumpspeed/8);
 	}
 }
 
+// vertical spring mechanic - eddy
+if place_meeting(x, y, obj_upspring){
+	v_move = -3.3
+}
+
+// horizontal spring mechanic - eddy & niels
+if place_meeting(x, y, obj_Hspring){
+	h_move = 20
+}
+
+if place_meeting(x, y, obj_Hspring) && bounceallowed = true{
+	hbounceduration = 15
+	vbounceduration = 7
+	bounceallowed = false;
+}
+if hbounceduration > 0 {
+	hbounceduration -= 1;
+	h_move = 5;
+}
+
+if vbounceduration > 0{
+	vbounceduration -= 1;
+	v_move = -2;
+}
+	
+if hbounceduration = 0{
+	bounceallowed = true;
+}
+
 //ladder - eddy
 if (place_meeting(x, y, obj_ladder)){
 	OnLadder = true	
