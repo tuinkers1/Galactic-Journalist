@@ -56,3 +56,9 @@ camposv = 0
 camposh = 0
 
 global.transtime = 500
+
+//Springs
+hbounceduration = 0;
+vbounceduration = 0;
+horizontal_grav = -0.12;
+bounceallowed = true;
