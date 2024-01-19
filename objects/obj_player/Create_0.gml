@@ -9,6 +9,7 @@ walkSpeed = 0.1
 h_move = 0
 
 // Vertical movement
+
 player_grav = 0.06
 player_jumpspeed = -1.75
 v_move = 0
@@ -38,6 +39,8 @@ walljump_force = 60;
 wall_direction = 0;
 walljumping_state = false;
 walljumped = false;
+airborne_count = 0;
+airborne = false;
 
 // testing 
 x_ = 0
