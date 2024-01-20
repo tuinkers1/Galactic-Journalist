@@ -5,42 +5,43 @@
     {"name":"NPC","order":1,"path":"folders/Sprites/NPC.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"obj_LadderActivation","order":4,"path":"objects/obj_LadderActivation/obj_LadderActivation.yy",},
+    {"name":"spr_Hspring","order":4,"path":"sprites/spr_Hspring/spr_Hspring.yy",},
+    {"name":"obj_LadderActivation","order":3,"path":"objects/obj_LadderActivation/obj_LadderActivation.yy",},
     {"name":"obj_semisolid","order":4,"path":"objects/obj_semisolid/obj_semisolid.yy",},
     {"name":"obj_title_temp","order":1,"path":"objects/obj_title_temp/obj_title_temp.yy",},
     {"name":"obj_NPC_Albert_dialog_3","order":3,"path":"objects/obj_NPC_Albert_dialog_3/obj_NPC_Albert_dialog_3.yy",},
     {"name":"obj_NPC_Albert_dialog_1","order":1,"path":"objects/obj_NPC_Albert_dialog_1/obj_NPC_Albert_dialog_1.yy",},
+    {"name":"spr_springsheet","order":2,"path":"sprites/spr_springsheet/spr_springsheet.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"obj_NPC_Albert_dialog_2","order":2,"path":"objects/obj_NPC_Albert_dialog_2/obj_NPC_Albert_dialog_2.yy",},
     {"name":"spr_NPC_empty_portrait","order":3,"path":"sprites/spr_NPC_empty_portrait/spr_NPC_empty_portrait.yy",},
     {"name":"obj_NPC_Albert_dialog_random","order":4,"path":"objects/obj_NPC_Albert_dialog_random/obj_NPC_Albert_dialog_random.yy",},
-<<<<<<< Updated upstream
-    {"name":"obj_background_move","order":3,"path":"objects/obj_background_move/obj_background_move.yy",},
-=======
     {"name":"spr_dialog_bubble","order":3,"path":"sprites/spr_dialog_bubble/spr_dialog_bubble.yy",},
->>>>>>> Stashed changes
+    {"name":"spr_UPactivation_animation","order":14,"path":"sprites/spr_UPactivation_animation/spr_UPactivation_animation.yy",},
     {"name":"spr_button_exit","order":1,"path":"sprites/spr_button_exit/spr_button_exit.yy",},
     {"name":"fnt_dialog","order":1,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
-    {"name":"obj_Hspring","order":2,"path":"objects/obj_Hspring/obj_Hspring.yy",},
+    {"name":"obj_Hspring","order":1,"path":"objects/obj_Hspring/obj_Hspring.yy",},
+    {"name":"rm_springs","order":1,"path":"rooms/rm_springs/rm_springs.yy",},
     {"name":"obj_par_solid","order":3,"path":"objects/obj_par_solid/obj_par_solid.yy",},
+    {"name":"spr_Hactivation_animation_strip08","order":12,"path":"sprites/spr_Hactivation_animation_strip08/spr_Hactivation_animation_strip08.yy",},
+    {"name":"spr_upspring","order":3,"path":"sprites/spr_upspring/spr_upspring.yy",},
     {"name":"spr_player_portrait","order":2,"path":"sprites/spr_player_portrait/spr_player_portrait.yy",},
     {"name":"obj_transiton_tile","order":2,"path":"objects/obj_transiton_tile/obj_transiton_tile.yy",},
     {"name":"spr_player26","order":1,"path":"sprites/spr_player26/spr_player26.yy",},
-    {"name":"obj_upspring","order":6,"path":"objects/obj_upspring/obj_upspring.yy",},
+    {"name":"obj_upspring","order":5,"path":"objects/obj_upspring/obj_upspring.yy",},
+    {"name":"spr_upspring_animation_strip08","order":11,"path":"sprites/spr_upspring_animation_strip08/spr_upspring_animation_strip08.yy",},
     {"name":"spr_title_temp","order":2,"path":"sprites/spr_title_temp/spr_title_temp.yy",},
-    {"name":"obj_ladder","order":3,"path":"objects/obj_ladder/obj_ladder.yy",},
-    {"name":"spr_ladder","order":2,"path":"sprites/spr_ladder/spr_ladder.yy",},
-    {"name":"spr_upspring","order":4,"path":"sprites/spr_upspring/spr_upspring.yy",},
+    {"name":"obj_ladder","order":2,"path":"objects/obj_ladder/obj_ladder.yy",},
+    {"name":"spr_activation","order":5,"path":"sprites/spr_activation/spr_activation.yy",},
+    {"name":"spr_ladder","order":1,"path":"sprites/spr_ladder/spr_ladder.yy",},
     {"name":"obj_dialogstatus_global","order":2,"path":"objects/obj_dialogstatus_global/obj_dialogstatus_global.yy",},
     {"name":"obj_dialog_par","order":1,"path":"objects/obj_dialog_par/obj_dialog_par.yy",},
-<<<<<<< Updated upstream
+
     {"name":"spr_Hspring","order":5,"path":"sprites/spr_Hspring/spr_Hspring.yy",},
     {"name":"obj_flash","order":1,"path":"objects/obj_flash/obj_flash.yy",},
     {"name":"obj_SpringActivation1","order":5,"path":"objects/obj_SpringActivation1/obj_SpringActivation1.yy",},
-=======
-    {"name":"obj_dialog_bubble","order":3,"path":"objects/obj_dialog_bubble/obj_dialog_bubble.yy",},
->>>>>>> Stashed changes
+
     {"name":"spr_NPC_Albert_portrait","order":2,"path":"sprites/spr_NPC_Albert_portrait/spr_NPC_Albert_portrait.yy",},
-    {"name":"spr_flash","order":1,"path":"sprites/spr_flash/spr_flash.yy",},
+    {"name":"spr_Hspring_animation_strip08","order":7,"path":"sprites/spr_Hspring_animation_strip08/spr_Hspring_animation_strip08.yy",},
   ],
 }
