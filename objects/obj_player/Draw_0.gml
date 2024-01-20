@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_sprite_ext(spr_player26, image_index, x, y, image_xscale * facing, image_yscale, image_angle, c_white, image_alpha);
-/*camposh += 15
+draw_self()
+camposh += 15
 if sprite_exists(global.old_lvl) {
 draw_sprite_stretched(global.old_lvl,0,camposh,camposv,500,500)
 }
