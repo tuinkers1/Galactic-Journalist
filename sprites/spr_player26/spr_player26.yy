@@ -2,6 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player26",
+
   "bbox_bottom": 38,
   "bbox_left": 2,
   "bbox_right": 21,
@@ -20,10 +21,10 @@
   "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a9a7fbc6-ffc8-4077-ab7c-f7ab6090a06b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9757e0b6-7286-4e51-b0b0-47aff438875d","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 7,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",
@@ -59,8 +60,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 12,
+    "yorigin": 40,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -3,12 +3,16 @@
 
 //Set depth
 
-depth = y - 100
-// Vertical movement
+
+depth = y
+// Horizontal movement
 walkSpeed = 0.1
+
 h_move = 0
+facing = 1;
 
 // Vertical movement
+
 
 player_grav = 0.06
 player_jumpspeed = -1.75
@@ -35,6 +39,7 @@ coyote_max = 5
 // Walljump
 jumped = true;
 OnLadder = false;
+
 walljump_force = 60;
 wall_direction = 0;
 walljumping_state = false;
@@ -44,6 +49,7 @@ airborne = false;
 wall_time = 0;
 wall_cooldown = 0;
 wall_last = 0
+
 
 // testing 
 x_ = 0
