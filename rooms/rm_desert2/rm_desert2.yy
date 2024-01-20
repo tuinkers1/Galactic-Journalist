@@ -64,7 +64,7 @@
 -9,-2147483648,-5,0,1,34,-3,20,5,36,0,-2147483648,0,16,-3,47,1,24,-3,0,3,34,20,36,-9,0,-8,-2147483648,-5,0,1,16,-3,47,5,2,36,0,0,16,-3,
 47,1,24,-3,0,5,16,47,2,20,36,-7,0,1,-2147483648,-4,0,-3,-2147483648,-4,0,2,34,1,-4,47,4,2,20,20,1,-3,47,1,24,-3,0,1,16,-3,47,
 1,24,-6,0,4,-2147483648,34,20,36,-5,0,-4,20,1,1,-12,47,1,2,-3,20,1,1,-3,47,1,24,-3,0,1,34,-3,20,8,1,47,2,20,20,36,0,
-0,-25,47,5,2,36,0,0,16,-8,47,3,2,20,20,-26,47,4,2,20,20,1,-52,47,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+0,-25,47,5,2,36,0,0,16,-8,47,3,2,20,20,-26,47,4,2,20,20,1,-52,47,],"TileDataFormat":1,},"tilesetId":{"name":"ts_grass","path":"tilesets/ts_grass/ts_grass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
