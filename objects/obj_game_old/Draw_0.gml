@@ -23,4 +23,5 @@ if paused == true {
 		draw_text_transformed_color(cam_hor / 2, cam_ver / 2, "Paused!", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
 		draw_set_halign(fa_left);
 	}
-	}
+
+}

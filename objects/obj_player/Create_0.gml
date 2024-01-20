@@ -3,14 +3,15 @@
 
 //Set depth
 
-depth = y
+depth = y - 100
 // Vertical movement
-walkSpeed = 1.2
+walkSpeed = 0.1
 h_move = 0
 
 // Vertical movement
-player_grav = 0.04
-player_jumpspeed = -2.45
+
+player_grav = 0.06
+player_jumpspeed = -1.75
 v_move = 0
 
 //quicksand
@@ -32,12 +33,17 @@ coyote_counter = 0
 coyote_max = 5
 
 // Walljump
-jumped = true 
+jumped = true;
 OnLadder = false;
 walljump_force = 60;
 wall_direction = 0;
 walljumping_state = false;
 walljumped = false;
+airborne_count = 0;
+airborne = false;
+wall_time = 0;
+wall_cooldown = 0;
+wall_last = 0
 
 // testing 
 x_ = 0
@@ -53,3 +59,9 @@ camposv = 0
 camposh = 0
 
 global.transtime = 500
+
+//Springs
+hbounceduration = 0;
+vbounceduration = 0;
+horizontal_grav = -0.12;
+bounceallowed = true;
