@@ -1,94 +1,22 @@
-#region GET INPUT
+/// @description Insert description here
+// You can write your code in this editor
+
+// keyboard input detection 
 var left= keyboard_check(ord("A")) || keyboard_check(vk_left);
 var right= keyboard_check(ord("D")) || keyboard_check(vk_right);
 var jump_held = keyboard_check(vk_up) || keyboard_check(vk_space);
-var jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space);
+var jump = keyboard_check_pressed(vk_up) || keyboard_check(vk_space);
 var up = keyboard_check(vk_up) || keyboard_check(ord("W"))
 var down = keyboard_check(vk_down) || keyboard_check(ord("S"))
+var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check(vk_shift)
 var flash = keyboard_check(ord("F"))
-#endregion
 
-#region CALCULATE MOVEMENT
-h_move = (right - left) * walkSpeed; // Change to acceleration?
-v_move += player_grav;
 
-// Possibly add drag?
 
-// Limit h_move + v_move?
-
-// Set facing
-if (h_move != 0) {
-	facing = sign(h_move);	
-}
-
-// Ladder
-
-// Quicksand
-var on_quicksand = place_meeting(x, y + 1, obj_quicksandph);
-
-if (on_quicksand) {
-	v_move = player_sink_speed;	
-}
-
-// Jump
-var on_solid = place_meeting(x, y + 1, obj_solid);
-var on_wall = place_meeting(x + facing, y, obj_solid);
-
-show_debug_message(string(on_wall));
-
-if (jump) {
-	if (on_solid) {
-		v_move = player_jumpspeed;	
-	} 
-	if (on_quicksand) {
-		v_move = player_jumpspeed_quicksand;	
-	}
-	if (!on_solid and !on_quicksand and on_wall) {
-		 if (facing == -1) {
-			// Push to the right
-			h_move = 28 - walljump_force;
-			show_debug_message("Push to the right.");
-		 }
-	if (!on_solid and !on_quicksand and on_wall) {
-		if (facing == 1) {
-			// Push to the left
-			h_move = -28 + walljump_force;
-			show_debug_message("Push to the left.");
-		}
-		
-		v_move = player_jumpspeed;	
-		}
-	}
-}
-
-// Dash
-
-#endregion
-
-#region COLLIDE
-// Horizontal Collision
-if (place_meeting(x + h_move, y, obj_solid)) {
-	h_move = 0;	
-}
-
-// Vertical Collision
-if (place_meeting(x, y + v_move, obj_solid)) {
-	v_move = 0;	
-}
-#endregion
-
-#region APPLY
-x += h_move;
-y += v_move;
-
-#endregion
-
-#region ANIMATE/SPRITE CHANGES
-#endregion
 
 // temp ingame changing code
-/*
+
 //air gravity
 if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 {
@@ -369,4 +297,3 @@ y += v_move
 /*
 draw_rectangle_colour(-200, 200, 2000, -200, c_black, c_black, c_black, c_black, false);
 draw_sprite_stretched(global.old_lvl,0,0,0,500,500)
-*/
