@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_NPC_Albert",
+  "name": "obj_dialog_bubble",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Albert",
-    "path": "folders/Objects/NPC/Albert.yy",
+    "name": "NPC",
+    "path": "folders/Objects/NPC.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_NPC_Albert",
-    "path": "sprites/spr_NPC_Albert/spr_NPC_Albert.yy",
+    "name": "spr_dialog_bubble",
+    "path": "sprites/spr_dialog_bubble/spr_dialog_bubble.yy",
   },
   "spriteMaskId": null,
   "visible": true,
