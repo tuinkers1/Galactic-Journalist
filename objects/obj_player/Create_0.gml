@@ -3,7 +3,7 @@
 
 //Set depth
 
-depth = y
+depth = y - 100
 // Vertical movement
 walkSpeed = 0.1
 h_move = 0

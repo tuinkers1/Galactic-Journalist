@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_Hspring",
-  "bbox_bottom": 14,
-  "bbox_left": 0,
-  "bbox_right": 9,
-  "bbox_top": 1,
+  "bbox_bottom": 26,
+  "bbox_left": 7,
+  "bbox_right": 22,
+  "bbox_top": 6,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"05f4ebf1-94ca-44c6-9ecb-c4eff5f2e041",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1e9c40a-15a4-4417-867a-1d6a9eede9be",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2eeefc54-15b0-4533-938b-c33d403c59fd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"23d892b1-c2b9-4969-9e73-11a114e695ad","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"05f4ebf1-94ca-44c6-9ecb-c4eff5f2e041","path":"sprites/spr_Hspring/spr_Hspring.yy",},},},"Disabled":false,"id":"257c6900-cb3a-4e13-96bf-a5e97cd3e308","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c1e9c40a-15a4-4417-867a-1d6a9eede9be","path":"sprites/spr_Hspring/spr_Hspring.yy",},},},"Disabled":false,"id":"b620c540-9176-4103-9e52-967b46b46c02","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 32,
 }
