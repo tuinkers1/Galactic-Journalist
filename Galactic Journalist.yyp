@@ -151,8 +151,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_springs","path":"rooms/rm_springs/rm_springs.yy",},},
     {"roomId":{"name":"rm_startmenu","path":"rooms/rm_startmenu/rm_startmenu.yy",},},
+    {"roomId":{"name":"rm_springs","path":"rooms/rm_springs/rm_springs.yy",},},
     {"roomId":{"name":"rm_desert3","path":"rooms/rm_desert3/rm_desert3.yy",},},
     {"roomId":{"name":"rm_desert9","path":"rooms/rm_desert9/rm_desert9.yy",},},
     {"roomId":{"name":"rm_desert8","path":"rooms/rm_desert8/rm_desert8.yy",},},
