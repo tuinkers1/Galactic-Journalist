@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // room transition camera on hold for now - rachel
-
+/*
 if !sprite_exists(global.old_lvl) && global.transtime >0
 { 
 	var surface_ = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));

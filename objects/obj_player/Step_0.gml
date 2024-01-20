@@ -96,7 +96,7 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 }
 
 
-// dashing - rachel
+#region// dashing - rachel
 if grounded && !place_meeting(x+2,y,obj_par_solid){
 	dashallowed = true
 }
@@ -116,17 +116,92 @@ h_move = 0
 v_move = 0
 }
 
-
+#endregion
 // basic movement and gravity - rachel
-// calculate  movement
+#region// calculate  movement
 if dashduration == 0 && grounded {
-	walkSpeed = 2
+	walkSpeed = 1.2
 	h_move = (right - left) * walkSpeed;
 }
 	if dashduration == 0 && !grounded {
-	walkSpeed = 0.6
+	walkSpeed = 0.7
 	h_move = (right - left) * walkSpeed ;
 }
+#endregion
+#region//Airborne status.
+
+if airborne_count > 24 {
+	airborne = true;
+	//show_debug_message("Airborne.")
+}
+if (airborne_count < 24) {
+	airborne = false;
+	//show_debug_message("Not airborne.")
+}
+#endregion
+
+#region // NO WALL DETECTION
+
+if (!place_meeting(x-1 or x+1, y, obj_solid)) {
+	//wall_direction = 0;
+	//show_debug_message("No wall.")
+	airborne_count += 1;
+	//walljumped = false;
+}
+
+// WALL DETECTION TO RIGHT
+
+if (place_meeting(x+1, y, obj_solid)){
+	wall_direction = 1
+	//show_debug_message("Right wall.");
+	airborne = 0;
+}
+
+// WALL DETECTION TO LEFT
+
+if (place_meeting(x-1, y, obj_solid)){
+	wall_direction = -1;
+	//show_debug_message("Left wall.");
+	airborne = 0;
+	//walljumped = false;
+}
+#endregion
+#region// WALL STICK
+
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+	if (airborne = false) {
+		if (v_move) > 0.5 {
+			v_move = 0.4;
+		}
+	}
+}
+#endregion
+#region// wall jump - Iveta/Renardo/Rachel
+
+if wall_direction != wall_last || grounded{
+walljumped = false
+}
+
+if (airborne != true) {
+	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
+		if   (walljumping_state = false) && (walljumped == false) {
+			walljumping_state = true;
+			wall_time = 10
+			walljumped = true
+			alarm[0] = 7;
+		}
+	}
+} 
+if wall_time !=0 {
+	h_move = 0
+	v_move = 0
+	h_move -= walljump_force * wall_direction * 0.040;
+			v_move += player_jumpspeed ;
+			wall_time -=1
+			wall_last = wall_direction
+			
+}
+show_debug_message(walljumped)
 // collision
 if place_meeting(x+h_move,y,obj_solid){
 while(not place_meeting(x + sign(h_move),y,obj_solid))
@@ -137,11 +212,6 @@ while(not place_meeting(x + sign(h_move),y,obj_solid))
 h_move = 0
 }
 
-
-
-
-
-
 // collison with death barrier - rachel
 if place_meeting(x,y,obj_die){
 	x= obj_respawnpointph
@@ -151,6 +221,7 @@ if place_meeting(x,y,obj_die){
 
 if grounded {
 	jumped = false
+	show_debug_message("meow")
 	
 }
 else{ 
@@ -158,7 +229,7 @@ else{
    jumped =true
 	}
 }
-
+show_debug_message("mew")
 //coyote time - Rachel
 if grounded = false && coyote_counter > 0
 {
@@ -174,9 +245,6 @@ else
 	coyote_counter = coyote_max
 }
 
-	
-
-
 //input buffering and jump - Rachel
 if jump{
 	counter_buffer = max_buffer;
@@ -188,10 +256,41 @@ if counter_buffer > 0 {
 		counter_buffer =0;
 		jumped = true
 	}
+}
 		//Dynamic jump height - Niels
-if v_move < 0 and !jump_held && dashallowed = true{
+		
+if v_move < 0 and !jump_held && dashallowed = true {
 v_move = max(v_move, player_jumpspeed/8);
 	}
+
+
+// vertical spring mechanic - eddy
+if place_meeting(x, y, obj_upspring){
+	v_move = -2.3
+}
+
+// horizontal spring mechanic - eddy & niels
+if place_meeting(x, y, obj_Hspring){
+	h_move = 20
+}
+
+if place_meeting(x, y, obj_Hspring) && bounceallowed = true{
+	hbounceduration = 15
+	vbounceduration = 7
+	bounceallowed = false;
+}
+if hbounceduration > 0 {
+	hbounceduration -= 1;
+	h_move = 5;
+}
+
+if vbounceduration > 0{
+	vbounceduration -= 1;
+	v_move = -2;
+}
+	
+if hbounceduration = 0{
+	bounceallowed = true;
 }
 
 //ladder - eddy
@@ -211,49 +310,17 @@ if (OnLadder){
 
 }
 
-// WALL DETECTION TO RIGHT
 
-if (place_meeting(x+1, y, obj_solid)) {
-	wall_direction = 1
-}
+		
 
-// WALL DETECTION TO LEFT
 
-if (place_meeting(x-1, y, obj_solid)) {
-	wall_direction = -1
-}
 
-// NO WALL DETECTION
 
-if (!place_meeting(x-1 or x+1, y, obj_solid)) {
-	wall_direction = 0
-}
 
-// WALL STICK
-
-if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
-	if (v_move) > 1 {
-		v_move = 1
-	}
-}
-
-// wall jump - Iveta/Renardo
-
-if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
-	if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) {
-		h_move = walljump_force * wall_direction * -1;
-		v_move = -5;
-		walljumping_state = true;
-		grounded = false;
-		jumped = true;
-		alarm[0] = 30
-	}
-}
 
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
-var _inst = instance_create_layer(x, y, "Collision", obj_flash);
-
+var _inst = instance_create_layer(x, y, "Instances", obj_flash);
 } 
 
 // Quick quicksand effect
@@ -268,7 +335,7 @@ if (place_meeting(x, y + 1, obj_quicksandph))  {
 
 
 // movement
-x += round(h_move)
+x += h_move
 
 // Vertical collision accounting for semisolids
 var vcollide;
