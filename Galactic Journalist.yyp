@@ -153,6 +153,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_springs","path":"rooms/rm_springs/rm_springs.yy",},},
     {"roomId":{"name":"rm_startmenu","path":"rooms/rm_startmenu/rm_startmenu.yy",},},
+    {"roomId":{"name":"rm_desert3","path":"rooms/rm_desert3/rm_desert3.yy",},},
     {"roomId":{"name":"rm_desert9","path":"rooms/rm_desert9/rm_desert9.yy",},},
     {"roomId":{"name":"rm_desert8","path":"rooms/rm_desert8/rm_desert8.yy",},},
     {"roomId":{"name":"UNICORNSLAYER_ROOM","path":"rooms/UNICORNSLAYER_ROOM/UNICORNSLAYER_ROOM.yy",},},
@@ -160,7 +161,6 @@
     {"roomId":{"name":"rm_desert5","path":"rooms/rm_desert5/rm_desert5.yy",},},
     {"roomId":{"name":"rm_desert6","path":"rooms/rm_desert6/rm_desert6.yy",},},
     {"roomId":{"name":"rm_desert4","path":"rooms/rm_desert4/rm_desert4.yy",},},
-    {"roomId":{"name":"rm_desert3","path":"rooms/rm_desert3/rm_desert3.yy",},},
     {"roomId":{"name":"rm_desert2","path":"rooms/rm_desert2/rm_desert2.yy",},},
     {"roomId":{"name":"rm_desert1","path":"rooms/rm_desert1/rm_desert1.yy",},},
     {"roomId":{"name":"Sample_room","path":"rooms/Sample_room/Sample_room.yy",},},
