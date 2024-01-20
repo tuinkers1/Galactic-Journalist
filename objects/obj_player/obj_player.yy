@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player26",
-    "path": "sprites/spr_player26/spr_player26.yy",
+    "name": "spr_player_idle_right_strip",
+    "path": "sprites/spr_player_idle_right_strip/spr_player_idle_right_strip.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -13,6 +13,9 @@ player_grav = 0.04
 player_jumpspeed = -2.45
 v_move = 0
 
+//Movement animation
+dir = 3
+
 //quicksand
 player_sink_speed = .25;
 player_jumpspeed_quicksand = -0.5;
