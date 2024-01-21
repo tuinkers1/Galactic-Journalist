@@ -104,7 +104,7 @@ if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true 
 	}
 }
 #endregion
-#region// wall jump - Iveta/Renardo/Rachel
+// wall jump - Iveta/Renardo/Rachel
 
 if wall_direction != wall_last || grounded{
 walljumped = false
@@ -120,6 +120,7 @@ if (airborne != true) {
 		}
 	}
 } 
+
 if wall_time !=0 {
 	h_move = 0
 	v_move = 0
@@ -129,7 +130,8 @@ if wall_time !=0 {
 			wall_last = wall_direction
 			
 }
-show_debug_message(walljumped)
+
+//show_debug_message(walljumped)
 // collision
 if place_meeting(x+h_move,y,obj_solid){
 while(not place_meeting(x + sign(h_move),y,obj_solid))
@@ -149,7 +151,7 @@ if place_meeting(x,y,obj_die){
 
 if grounded {
 	jumped = false
-	show_debug_message("meow")
+	//show_debug_message("meow")
 	
 }
 else{ 
@@ -157,7 +159,7 @@ else{
    jumped =true
 	}
 }
-show_debug_message("mew")
+//show_debug_message("mew")
 //coyote time - Rachel
 if grounded = false && coyote_counter > 0
 {
@@ -171,7 +173,10 @@ if grounded = false && coyote_counter > 0
 else 
 {
 	coyote_counter = coyote_max
-}
+	}
+	if place_meeting(x,y,obj_semisolid){
+		coyote_counter=0
+	}
 
 //input buffering and jump - Rachel
 if jump{
@@ -179,7 +184,7 @@ if jump{
 }
 if counter_buffer > 0 {
 	counter_buffer -= 1
-	if grounded && keyboard_check_pressed(vk_space){
+	if grounded && keyboard_check_pressed(vk_space) && !place_meeting(x,y,obj_semisolid){
 		v_move = player_jumpspeed;
 		counter_buffer =0;
 		jumped = true
@@ -187,7 +192,7 @@ if counter_buffer > 0 {
 }
 		//Dynamic jump height - Niels
 		
-if v_move < 0 and !jump_held && dashallowed = true {
+if v_move < 0 and !jump_held && dashallowed = true && !place_meeting(x,y,obj_semisolid) {
 v_move = max(v_move, player_jumpspeed/8);
 	}
 
@@ -293,6 +298,7 @@ if (vcollide != noone)
 else
 grounded = false;
 y += v_move
+
 
 // Checks whather player is in dialog and stop movement.
 
