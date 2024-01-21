@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth = y - 10
+paused = false
+paused_surf = -1
