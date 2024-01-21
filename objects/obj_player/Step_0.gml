@@ -193,9 +193,11 @@ v_move = max(v_move, player_jumpspeed/8);
 
 
 // vertical spring mechanic - eddy
-if place_meeting(x, y, obj_upspring){
-	v_move = -2.3
+if place_meeting(x, y, obj_upspring) || place_meeting(x, y, obj_upspring_animation){
+ 	v_move = -2.3
 }
+
+
 
 // horizontal spring mechanic - eddy & niels
 if place_meeting(x, y, obj_Hspring){
