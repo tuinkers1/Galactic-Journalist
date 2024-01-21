@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_UPactivation_animation",
-    "path": "sprites/spr_UPactivation_animation/spr_UPactivation_animation.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

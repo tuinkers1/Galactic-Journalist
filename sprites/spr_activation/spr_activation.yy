@@ -24,6 +24,10 @@
   ],
   "nineSlice": null,
   "origin": 9,
+  "parent": {
+    "name": "Galactic Journalist",
+    "path": "Galactic Journalist.yyp",
+  },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",

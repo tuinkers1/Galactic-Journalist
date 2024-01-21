@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_quicksandph",
-    "path": "sprites/spr_quicksandph/spr_quicksandph.yy",
+    "name": "spr_quicksand_strip07",
+    "path": "sprites/spr_quicksand_strip07/spr_quicksand_strip07.yy",
   },
   "spriteMaskId": null,
   "visible": true,
