@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sandspritesheetFINAL",
-  "bbox_bottom": 47,
+  "name": "outerworld_bg3_sheet",
+  "bbox_bottom": 149,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 399,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6601e2cf-32e3-436b-9f7a-65e4cf20a5a3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0ec75f7-e6e4-4fb5-9798-141aab91f16a",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 48,
+  "height": 150,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"882c81ec-8710-4144-a9f6-291d03af9de2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b3d64ad4-5bae-4c92-a4dd-0ff54e6ac7e7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "Overworld",
+    "path": "folders/Sprites/Background/Overworld.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sandspritesheetFINAL",
+    "name": "outerworld_bg3_sheet",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6601e2cf-32e3-436b-9f7a-65e4cf20a5a3","path":"sprites/sandspritesheetFINAL/sandspritesheetFINAL.yy",},},},"Disabled":false,"id":"ded137e9-9e12-4c79-bc7b-a79b2c8ff27f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c0ec75f7-e6e4-4fb5-9798-141aab91f16a","path":"sprites/outerworld_bg3_sheet/outerworld_bg3_sheet.yy",},},},"Disabled":false,"id":"002ad829-53bf-43bd-99c0-ffa18a40e649","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 400,
 }
