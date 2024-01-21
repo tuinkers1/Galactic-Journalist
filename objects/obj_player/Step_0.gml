@@ -173,7 +173,10 @@ if grounded = false && coyote_counter > 0
 else 
 {
 	coyote_counter = coyote_max
-}
+	}
+	if place_meeting(x,y,obj_semisolid){
+		coyote_counter=0
+	}
 
 //input buffering and jump - Rachel
 if jump{
