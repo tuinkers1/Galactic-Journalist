@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Flash",
-    "path": "folders/Objects/Flash.yy",
+    "name": "upSpring",
+    "path": "folders/Objects/Flash/upSpring.yy",
   },
   "parentObjectId": null,
   "persistent": false,

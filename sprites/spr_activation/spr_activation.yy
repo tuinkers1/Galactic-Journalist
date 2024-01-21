@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Flash",
-    "path": "folders/Sprites/Flash.yy",
+    "name": "upSpring",
+    "path": "folders/Sprites/Flash/upSpring.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
