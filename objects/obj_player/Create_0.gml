@@ -16,13 +16,15 @@ v_move = 0
 
 //quicksand
 player_sink_speed = .25;
-player_jumpspeed_quicksand = -0.5;
+player_jumpspeed_quicksand = -4.5;
+player_quicksand_time = 1;
 
 // Dash
 dashallowed = true
 dashduration = 0
 dashspeed = 3
 dashdirection = 0
+dashcooldown = 0
 
 // Jump buffer
 counter_buffer = 0

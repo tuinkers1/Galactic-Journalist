@@ -4,7 +4,9 @@
     {"name":"Overworld","order":9,"path":"folders/Sprites/Background/Overworld.yy",},
   ],
   "ResourceOrderSettings": [
+
     {"name":"spr_activation","order":3,"path":"sprites/spr_activation/spr_activation.yy",},
+
     {"name":"spr_respawn","order":14,"path":"sprites/spr_respawn/spr_respawn.yy",},
     {"name":"obj_LadderActivation","order":3,"path":"objects/obj_LadderActivation/obj_LadderActivation.yy",},
     {"name":"obj_SpringActivation4","order":3,"path":"objects/obj_SpringActivation4/obj_SpringActivation4.yy",},
