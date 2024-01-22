@@ -12,8 +12,27 @@ var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check(vk_shift)
 var flash = keyboard_check(ord("F"))
 
+if h_move < 0 {
+	dir = 0
+}
+	
+if h_move > 0 {
+	dir = 1;
+}
 
+// If Idle
+if (v_move == 0 && h_move == 0) {
+myState = playerState.idle;
+}
 
+if (v_move == 0 && h_move != 0) && grounded{
+	myState = playerState.walking;
+}
+
+// Auto-choose Sprite based on state and direction
+sprite_index = playerSpr[myState][dir];
+
+	
 
 // temp ingame changing code
 
@@ -25,18 +44,20 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 
 
 // dashing - rachel
-if grounded && !place_meeting(x+2,y,obj_par_solid){
+if grounded && !place_meeting(x+2,y,obj_semisolid) {
 	dashallowed = true
 }
- if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) {
+ if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dashcooldown == 0 {
 	dashduration = 15
 	dashallowed = false
 	dashdirection = point_direction(0, 0, right-left, down-up)
 	h_move = lengthdir_x(dashspeed, dashdirection)
 	v_move = lengthdir_y(dashspeed, dashdirection)
+	dashcooldown = 25;	
 }
 if dashduration > 0 {
 	dashduration -= 1
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 }
 
 if dashduration == 1{
@@ -44,10 +65,14 @@ h_move = 0
 v_move = 0
 }
 
+if dashcooldown > 0 {
+	dashcooldown -=1;
+}
+
 
 // basic movement and gravity - rachel
 // calculate  movement
-if dashduration == 0 && grounded {
+if dashduration == 0 && grounded  {
 	walkSpeed = 1.2
 	h_move = (right - left) * walkSpeed;
 }
@@ -55,6 +80,7 @@ if dashduration == 0 && grounded {
 	walkSpeed = 0.7
 	h_move = (right - left) * walkSpeed ;
 }
+
 // collision
 if place_meeting(x+h_move,y,obj_solid){
 while(not place_meeting(x + sign(h_move),y,obj_solid))
@@ -78,7 +104,7 @@ if grounded {
 }
 else{ 
 	if coyote_counter == 0 {
-   jumped =true
+   jumped = true
 	}
 }
 
@@ -86,7 +112,7 @@ else{
 if grounded = false && coyote_counter > 0
 {
 	coyote_counter -= 1
-	if jumped = false && jump 
+	if jumped = false && jump
 	{
 		v_move = player_jumpspeed
 		jumped = true
@@ -97,20 +123,24 @@ else
 	coyote_counter = coyote_max
 }
 
+
+
 //input buffering and jump - Rachel
 if jump{
 	counter_buffer = max_buffer;
 }
 if counter_buffer > 0 {
 	counter_buffer -= 1
-	if grounded && keyboard_check_pressed(vk_space){
+	if grounded && (keyboard_check(vk_space)){
 		v_move = player_jumpspeed;
 		counter_buffer =0;
 		jumped = true
+		part_particles_create(global.P_System,x+5,y+20,global.Particle1, 100)
+		//myState = playerState.jumping;
 	}
 		//Dynamic jump height - Niels
-if v_move < 0 and !jump_held && dashallowed = true {
-v_move = max(v_move, player_jumpspeed/8);
+	if v_move < 0 and !jump_held && dashallowed = true {
+	v_move = max(v_move, player_jumpspeed/8);
 	}
 }
 
@@ -132,11 +162,13 @@ if place_meeting(x, y, obj_Hspring) && bounceallowed = true{
 if hbounceduration > 0 {
 	hbounceduration -= 1;
 	h_move = 5;
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 }
 
 if vbounceduration > 0{
 	vbounceduration -= 1;
 	v_move = -2;
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 }
 	
 if hbounceduration = 0{
@@ -204,6 +236,7 @@ if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true 
 	if (airborne = false) {
 		if (v_move) > 0.5 {
 			v_move = 0.5;
+			part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 		}
 	}
 }
@@ -217,6 +250,7 @@ if (airborne != true) {
 			h_move -= walljump_force * wall_direction * 0.20;
 			v_move += player_jumpspeed;
 			alarm[0] = 7;
+			part_particles_create(global.P_System,x+5,y+20,global.Particle3, 5)
 		}
 	}
 }

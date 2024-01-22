@@ -4,12 +4,15 @@
 //Set depth
 
 depth = y
+
 // Vertical movement
 walkSpeed = 0.1
 h_move = 0
 
-// Vertical movement
+//Direction
+dir = 0
 
+// Vertical movement
 player_grav = 0.06
 player_jumpspeed = -1.75
 v_move = 0
@@ -23,6 +26,7 @@ dashallowed = true
 dashduration = 0
 dashspeed = 3
 dashdirection = 0
+dashcooldown = 0
 
 // Jump buffer
 counter_buffer = 0
@@ -62,3 +66,18 @@ hbounceduration = 0;
 vbounceduration = 0;
 horizontal_grav = -0.12;
 bounceallowed = true;
+
+myState = playerState.idle;
+
+// Player Sprite array [myState][dir]
+// Idle
+playerSpr[playerState.idle][0] = spr_idleleft;
+playerSpr[playerState.idle][1] = spr_idleright;
+
+//Walking
+playerSpr[playerState.walking][0] = spr_walkingleft;
+playerSpr[playerState.walking][1] = spr_walkingright;
+/*
+//Jumping
+playerSpr[playerState.walking][0] = spr_jumpingleft;
+playerSpr[playerState.walking][1] = spr_jumpingright;
