@@ -64,6 +64,7 @@
     {"id":{"name":"rm_desert1","path":"rooms/rm_desert1/rm_desert1.yy",},},
     {"id":{"name":"rm_desert3","path":"rooms/rm_desert3/rm_desert3.yy",},},
     {"id":{"name":"obj_semisolid","path":"objects/obj_semisolid/obj_semisolid.yy",},},
+    {"id":{"name":"test","path":"objects/test/test.yy",},},
     {"id":{"name":"obj_title_temp","path":"objects/obj_title_temp/obj_title_temp.yy",},},
     {"id":{"name":"obj_NPC_Albert_dialog_3","path":"objects/obj_NPC_Albert_dialog_3/obj_NPC_Albert_dialog_3.yy",},},
     {"id":{"name":"spr_bjobject","path":"sprites/spr_bjobject/spr_bjobject.yy",},},

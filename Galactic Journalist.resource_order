@@ -7,6 +7,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_LadderActivation","order":4,"path":"objects/obj_LadderActivation/obj_LadderActivation.yy",},
     {"name":"obj_semisolid","order":4,"path":"objects/obj_semisolid/obj_semisolid.yy",},
+    {"name":"test","order":4,"path":"objects/test/test.yy",},
     {"name":"obj_title_temp","order":1,"path":"objects/obj_title_temp/obj_title_temp.yy",},
     {"name":"obj_NPC_Albert_dialog_3","order":3,"path":"objects/obj_NPC_Albert_dialog_3/obj_NPC_Albert_dialog_3.yy",},
     {"name":"obj_NPC_Albert_dialog_1","order":1,"path":"objects/obj_NPC_Albert_dialog_1/obj_NPC_Albert_dialog_1.yy",},
