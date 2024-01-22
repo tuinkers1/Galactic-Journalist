@@ -17,6 +17,8 @@
     {"name":"inst_722D9BE3","path":"rooms/rm_desert5/rm_desert5.yy",},
     {"name":"inst_35087C16","path":"rooms/rm_desert5/rm_desert5.yy",},
     {"name":"inst_5EA6DCC6","path":"rooms/rm_desert5/rm_desert5.yy",},
+    {"name":"inst_740A66D3","path":"rooms/rm_desert5/rm_desert5.yy",},
+    {"name":"inst_6D26C061","path":"rooms/rm_desert5/rm_desert5.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -30,6 +32,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67AC8BD2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_respawnpointph","path":"objects/obj_respawnpointph/obj_respawnpointph.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":40.0,"y":88.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_722D9BE3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_transiton_tile","path":"objects/obj_transiton_tile/obj_transiton_tile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":12.0,"x":248.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35087C16","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_transiton_tile","path":"objects/obj_transiton_tile/obj_transiton_tile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":12.0,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_740A66D3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dash_grant","path":"objects/obj_dash_grant/obj_dash_grant.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":13.0,"x":64.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D26C061","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dynamiteJohnson_near","path":"objects/obj_dynamiteJohnson_near/obj_dynamiteJohnson_near.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":13.0,"x":184.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EA6DCC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_NPC_DynamiteJohnson","path":"objects/obj_NPC_DynamiteJohnson/obj_NPC_DynamiteJohnson.yy",},"properties":[],"rotation":0.0,"scaleX":0.68,"scaleY":0.6097561,"x":202.0,"y":96.0,},

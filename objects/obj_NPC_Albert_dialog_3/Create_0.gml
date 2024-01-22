@@ -5,9 +5,8 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(spr_NPC_Albert_portrait, "Hey, check this out.")
-dialog.add(spr_NPC_empty_portrait, "*He shows you a small set of postcards, each from a different planet's beachside.*")
-dialog.add(spr_player_portrait, "Looks nice. From who?")
-dialog.add(spr_NPC_Albert_portrait, "From my dad. He always sent me his favourite surfing spots. Even did that last year, before he passed on.")
-dialog.add(spr_player_portrait, "My condolences.")
-dialog.add(spr_NPC_Albert_portrait, "Nah, don't sweat it. He always said he wanted to surf forever. Hope he got his wish.")
+dialog.add(spr_NPC_Albert_portrait, "Just so you know, there's a big bear on the way to town.")
+dialog.add(spr_player_portrait, "You mean a big bear of a man?")
+dialog.add(spr_player_portrait, "No, a bear. He's the foreman of the mines, but they're gunked now.")
+dialog.add(spr_NPC_Albert_portrait, "He's in a pretty downer mood. Might want to be careful.")
+dialog.add(spr_player_portrait, "Noted.")

@@ -20,6 +20,7 @@ player_jumpspeed_quicksand = -4.5;
 player_quicksand_time = 1;
 
 // Dash
+dashgranted = false
 dashallowed = true
 dashduration = 0
 dashspeed = 3
