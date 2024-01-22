@@ -12,10 +12,28 @@ var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check_pressed(vk_shift)
 var flash = keyboard_check_pressed(ord("F"))
 
+if h_move < 0 {
+	dir = 0
+}
+	
+if h_move > 0 {
+	dir = 1;
+}
+
+// If Idle
+if (v_move == 0 && h_move == 0) {
+myState = playerState.idle;
+}
+
+if (v_move == 0 && h_move != 0) && grounded{
+	myState = playerState.walking;
+}
+
+// Auto-choose Sprite based on state and direction
+sprite_index = playerSpr[myState][dir];
 
 
-
-// temp ingame changing code
+//temp ingame changing code
 
 if dialogstatus = true {
 	h_move = 0;
@@ -37,6 +55,7 @@ if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false{
 	dashdirection = point_direction(0, 0, right-left, down-up)
 	h_move = lengthdir_x(dashspeed, dashdirection)
 	v_move = lengthdir_y(dashspeed, dashdirection)
+	part_particles_create(global.P_System,x,y+1,global.Particle1, 2)
  }
 if dashduration > 0 {
 	dashduration -= 1
@@ -165,6 +184,7 @@ if grounded = false && coyote_counter > 0
 	{
 		v_move = player_jumpspeed
 		jumped = true
+		part_particles_create(global.P_System,x,y+1,global.Particle1, 100)
 	}
 }
 else 
@@ -187,7 +207,7 @@ if counter_buffer > 0 {
 		jumped = true
 	}
 }
-		//Dynamic jump height - Niels
+//Dynamic jump height - Niels
 		
 if v_move < 0 and !jump_held && dashallowed = true && !place_meeting(x,y,obj_semisolid) {
 v_move = max(v_move, player_jumpspeed/8);
@@ -207,7 +227,7 @@ if place_meeting(x, y, obj_downspring) || place_meeting(x, y, obj_downspring_ani
 
 
 // horizontal spring mechanic - eddy & niels
-//Left Spring
+//Leftwards Spring
 if place_meeting(x, y, obj_leftspring)|| place_meeting(x, y, obj_leftspring_animation){
 	h_move = -2.3
 }
@@ -231,32 +251,34 @@ if hbounceduration = 0{
 	bounceallowed = true;
 }
 
-////Right Spring
-//if place_meeting(x, y, obj_rightspring)|| place_meeting(x, y, obj_rightspring_animation){
-//	h_move = 2.3
-//}
-//
-//if place_meeting(x, y, obj_rightspring) && bounceallowed = true{
-//	hbounceduration = 15
-//	vbounceduration = 7
-//	bounceallowed = false;
-//}
-//if hbounceduration > 0 {
-//	hbounceduration -= 1;
-//	h_move = 5;
-//}
-//
-//if vbounceduration > 0{
-//	vbounceduration -= 1;
-//	v_move = -2;
-//}
-//	
-//if hbounceduration = 0{
-//	bounceallowed = true;
-//}
+//Rightwards Spring
+if place_meeting(x, y, obj_rightspring)|| place_meeting(x, y, obj_rightspring_animation){
+	h_move = 2.3
+}
+
+if place_meeting(x, y, obj_rightspring) && bounceallowed = true{
+	hbounceduration = 15
+	vbounceduration = 7
+	bounceallowed = false;
+}
+if hbounceduration > 0 {
+	hbounceduration -= 1;
+	h_move = 5;
+}
+
+if vbounceduration > 0{
+	vbounceduration -= 1;
+	v_move = -2;
+}
+	
+if hbounceduration = 0{
+	bounceallowed = true;
+}
 
 
-//ladder - eddy
+
+
+//Ladder - eddy
 if (place_meeting(x, y, obj_ladder)){
 	OnLadder = true	
 }
@@ -274,7 +296,7 @@ if (OnLadder){
 }
 
 
-		
+
 
 
  if player_quicksand_time > 0 {
@@ -282,9 +304,10 @@ if (OnLadder){
  }
 //show_debug_message(player_quicksand_time)
 
-// if ability is pressed, spawn obj_ability - eddy
+
+// Flash mechanic - eddy
 if (flash){
-var _inst = instance_create_layer(x, y, "Instances", obj_flash);
+	instance_create_layer(x, y, "Instances", obj_flash);
 } 
 
 // Quick quicksand effect

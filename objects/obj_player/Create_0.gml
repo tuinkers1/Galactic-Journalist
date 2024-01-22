@@ -3,6 +3,9 @@
 
 //Set depth
 
+//Direction
+dir = 0
+
 depth = y - 100
 // Vertical movement
 walkSpeed = 0.1

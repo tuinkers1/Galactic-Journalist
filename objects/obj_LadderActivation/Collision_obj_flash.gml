@@ -4,7 +4,7 @@
 if not activated {
 	
 	for (var i = 0; i < 10; i++){
-		instance_create_layer(200, 600 + (i * 8), "Instances", obj_ladder);
+		instance_create_layer(170, 32 + (i * 8), "Instances", obj_ladder);
 	}
 	
 
