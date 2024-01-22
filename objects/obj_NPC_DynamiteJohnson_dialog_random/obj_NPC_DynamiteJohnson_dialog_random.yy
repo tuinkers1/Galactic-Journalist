@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_NPC_DynamiteJohnson",
+  "name": "obj_NPC_DynamiteJohnson_dialog_random",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,7 +11,10 @@
     "name": "DynamiteJohnson",
     "path": "folders/Objects/NPC/DynamiteJohnson.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_dialog_par",
+    "path": "objects/obj_dialog_par/obj_dialog_par.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr__NPC_dynamiteJohnson",
-    "path": "sprites/spr__NPC_dynamiteJohnson/spr__NPC_dynamiteJohnson.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
