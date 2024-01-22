@@ -28,14 +28,10 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 
 
 #region// dashing - rachel
-if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false && dashgranted = true {
+if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false{
 	dashallowed = true
 }
-<<<<<<< Updated upstream
  if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dialogstatus == false && dashcooldown == 0 {
-=======
- if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dialogstatus = false && dashgranted = true{
->>>>>>> Stashed changes
 	dashduration = 15
 	dashallowed = false
 	dashdirection = point_direction(0, 0, right-left, down-up)
