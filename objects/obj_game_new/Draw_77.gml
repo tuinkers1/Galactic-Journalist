@@ -21,6 +21,8 @@ if (keyboard_check_pressed(ord("P"))) {
 			instance_deactivate_all(true);
 			instance_create_layer(x,y,"Instances", obj_pause_text);
 			instance_activate_object(obj_pause_text);
+			instance_create_layer(x,y + 20, "Instances", obj_pause_escape);
+			instance_activate_object(obj_pause_escape);
 			pause_surf = surface_create(gameres_w, gameres_h);
 			surface_set_target(pause_surf);
 			draw_surface(application_surface, 0, 0);
@@ -34,6 +36,7 @@ if (keyboard_check_pressed(ord("P"))) {
 		{
 			pause = false;
 			instance_destroy(obj_pause_text);
+			instance_destroy(obj_pause_escape);
 			instance_activate_all();
 			if (surface_exists(pause_surf)) surface_free(pause_surf);
 			if (buffer_exists(pause_surf_buffer)) buffer_delete(pause_surf_buffer);
