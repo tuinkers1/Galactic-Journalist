@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"Overworld","order":9,"path":"folders/Sprites/Background/Overworld.yy",},
     {"name":"DynamiteJohnson","order":1,"path":"folders/Objects/NPC/DynamiteJohnson.yy",},
+    {"name":"Overworld","order":9,"path":"folders/Sprites/Background/Overworld.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_ts_rocks","order":1,"path":"sprites/spr_ts_rocks/spr_ts_rocks.yy",},

@@ -17,6 +17,9 @@ var flash = keyboard_check(ord("F"))
 
 // temp ingame changing code
 
+if dialogstatus = true {
+	h_move = 0;
+}
 //air gravity
 if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 {
@@ -25,10 +28,10 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 
 
 #region// dashing - rachel
-if grounded && !place_meeting(x+2,y,obj_par_solid){
+if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false{
 	dashallowed = true
 }
- if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) {
+ if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dialogstatus = false{
 	dashduration = 15
 	dashallowed = false
 	dashdirection = point_direction(0, 0, right-left, down-up)
@@ -47,11 +50,11 @@ v_move = 0
 #endregion
 // basic movement and gravity - rachel
 #region// calculate  movement
-if dashduration == 0 && grounded {
+if dashduration == 0 && grounded && dialogstatus = false {
 	walkSpeed = 1.2
 	h_move = (right - left) * walkSpeed;
 }
-	if dashduration == 0 && !grounded {
+	if dashduration == 0 && !grounded && dialogstatus = false {
 	walkSpeed = 0.7
 	h_move = (right - left) * walkSpeed ;
 }
@@ -184,7 +187,7 @@ if jump{
 }
 if counter_buffer > 0 {
 	counter_buffer -= 1
-	if grounded && keyboard_check_pressed(vk_space) && !place_meeting(x,y,obj_semisolid){
+	if grounded && keyboard_check_pressed(vk_space) && !place_meeting(x,y,obj_semisolid) && dialogstatus = false {
 		v_move = player_jumpspeed;
 		counter_buffer =0;
 		jumped = true
