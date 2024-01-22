@@ -9,8 +9,8 @@ var jump = keyboard_check_pressed(vk_up) || keyboard_check(vk_space);
 var up = keyboard_check(vk_up) || keyboard_check(ord("W"))
 var down = keyboard_check(vk_down) || keyboard_check(ord("S"))
 var grounded = place_meeting(x,y+1,obj_par_solid)
-var dashing = keyboard_check(vk_shift)
-var flash = keyboard_check(ord("F"))
+var dashing = keyboard_check_pressed(vk_shift)
+var flash = keyboard_check_pressed(ord("F"))
 
 
 
@@ -31,22 +31,24 @@ if (not place_meeting(x,y+1,obj_solid)) && dashduration == 0
 if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false{
 	dashallowed = true
 }
- if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dialogstatus = false{
+ if dashing and dashallowed == true && !place_meeting(x,y,obj_solid) && dialogstatus == false && dashcooldown == 0 {
 	dashduration = 15
 	dashallowed = false
 	dashdirection = point_direction(0, 0, right-left, down-up)
 	h_move = lengthdir_x(dashspeed, dashdirection)
 	v_move = lengthdir_y(dashspeed, dashdirection)
-}
+ }
 if dashduration > 0 {
 	dashduration -= 1
-}
-
+	dashcooldown = 10
+} 
 if dashduration == 1{
 h_move = 0
 v_move = 0
 }
-
+if dashcooldown > 0 {
+	dashcooldown -= 1
+}
 #endregion
 // basic movement and gravity - rachel
 #region// calculate  movement
@@ -114,7 +116,7 @@ walljumped = false
 }
 
 if (airborne != true) {
-	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
+	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) && player_quicksand_time == 0{
 		if   (walljumping_state = false) && (walljumped == false) {
 			walljumping_state = true;
 			wall_time = 10
@@ -283,9 +285,10 @@ if (OnLadder){
 		
 
 
-
-
-
+ if player_quicksand_time > 0 {
+		player_quicksand_time -= 1
+ }
+show_debug_message(player_quicksand_time)
 
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
@@ -294,14 +297,18 @@ var _inst = instance_create_layer(x, y, "Instances", obj_flash);
 
 // Quick quicksand effect
 if (place_meeting(x, y + 1, obj_quicksandph))  {
+	player_quicksand_time = 30
     v_move = player_sink_speed;
+	
     // We are on the quicksand
-    if (jump) {
+    if keyboard_check_pressed(vk_space ) {
         // Jump
         v_move = player_jumpspeed_quicksand;
     }
 }
-
+ if player_quicksand_time != 0 {
+		player_quicksand_time -= 1
+ }
 
 // movement
 x += h_move
@@ -332,6 +339,7 @@ if (vcollide != noone)
 else
 grounded = false;
 y += v_move
+
 
 
 // Checks whather player is in dialog and stop movement.
