@@ -5,6 +5,9 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_activation","order":3,"path":"sprites/spr_activation/spr_activation.yy",},
+
+   
+
     {"name":"spr_respawn","order":14,"path":"sprites/spr_respawn/spr_respawn.yy",},
     {"name":"obj_LadderActivation","order":3,"path":"objects/obj_LadderActivation/obj_LadderActivation.yy",},
     {"name":"obj_SpringActivation4","order":3,"path":"objects/obj_SpringActivation4/obj_SpringActivation4.yy",},
@@ -50,6 +53,7 @@
     {"name":"obj_control","order":1,"path":"objects/obj_control/obj_control.yy",},
     {"name":"spr_title_temp","order":2,"path":"sprites/spr_title_temp/spr_title_temp.yy",},
     {"name":"obj_particle_sand","order":3,"path":"objects/obj_particle_sand/obj_particle_sand.yy",},
+    {"name":"spr_title_temp","order":2,"path":"sprites/spr_title_temp/spr_title_temp.yy",},
     {"name":"spr_UPactivation_animation","order":2,"path":"sprites/spr_UPactivation_animation/spr_UPactivation_animation.yy",},
     {"name":"obj_ladder","order":2,"path":"objects/obj_ladder/obj_ladder.yy",},
     {"name":"spr_wallslideL","order":8,"path":"sprites/spr_wallslideL/spr_wallslideL.yy",},

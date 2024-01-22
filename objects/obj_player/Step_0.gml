@@ -33,6 +33,7 @@ if (v_move == 0 && h_move != 0) && grounded{
 sprite_index = playerSpr[myState][dir];
 
 
+
 //temp ingame changing code
 
 if dialogstatus = true {
