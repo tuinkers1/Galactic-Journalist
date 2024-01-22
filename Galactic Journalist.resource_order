@@ -1,6 +1,11 @@
 {
   "FolderOrderSettings": [
     {"name":"DynamiteJohnson","order":1,"path":"folders/Objects/NPC/DynamiteJohnson.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"Pause","order":2,"path":"folders/Objects/Pause.yy",},
+    {"name":"In Game Control","order":2,"path":"folders/Objects/User Interface/In Game Control.yy",},
+>>>>>>> Stashed changes
     {"name":"Overworld","order":9,"path":"folders/Sprites/Background/Overworld.yy",},
   ],
   "ResourceOrderSettings": [
@@ -65,6 +70,7 @@
     {"name":"obj_NPC_Albert_dialog_2","order":2,"path":"objects/obj_NPC_Albert_dialog_2/obj_NPC_Albert_dialog_2.yy",},
     {"name":"spr_LEFTactivation_animation_R","order":2,"path":"sprites/spr_LEFTactivation_animation_R/spr_LEFTactivation_animation_R.yy",},
     {"name":"spr_ts_allSets","order":7,"path":"sprites/spr_ts_allSets/spr_ts_allSets.yy",},
+    {"name":"obj_dash_grant","order":5,"path":"objects/obj_dash_grant/obj_dash_grant.yy",},
     {"name":"spr_rightspring","order":3,"path":"sprites/spr_rightspring/spr_rightspring.yy",},
     {"name":"spr_DOWNactivation_animation","order":1,"path":"sprites/spr_DOWNactivation_animation/spr_DOWNactivation_animation.yy",},
     {"name":"spr_NPC_empty_portrait","order":3,"path":"sprites/spr_NPC_empty_portrait/spr_NPC_empty_portrait.yy",},
@@ -80,8 +86,10 @@
     {"name":"obj_par_solid","order":3,"path":"objects/obj_par_solid/obj_par_solid.yy",},
     {"name":"obj_upspring_animation_R","order":2,"path":"objects/obj_upspring_animation_R/obj_upspring_animation_R.yy",},
     {"name":"spr_upspring","order":3,"path":"sprites/spr_upspring/spr_upspring.yy",},
+    {"name":"obj_dynamitejohnson_near","order":6,"path":"objects/obj_dynamitejohnson_near/obj_dynamitejohnson_near.yy",},
     {"name":"spr_player_portrait","order":2,"path":"sprites/spr_player_portrait/spr_player_portrait.yy",},
     {"name":"obj_transiton_tile","order":2,"path":"objects/obj_transiton_tile/obj_transiton_tile.yy",},
+    {"name":"obj_dialogue_dash","order":1,"path":"objects/obj_dialogue_dash/obj_dialogue_dash.yy",},
     {"name":"spr_player26","order":1,"path":"sprites/spr_player26/spr_player26.yy",},
     {"name":"spr_wallslideR","order":13,"path":"sprites/spr_wallslideR/spr_wallslideR.yy",},
     {"name":"ts_allSets","order":2,"path":"tilesets/ts_allSets/ts_allSets.yy",},
@@ -109,6 +117,11 @@
     {"name":"obj_SpringActivation1","order":3,"path":"objects/obj_SpringActivation1/obj_SpringActivation1.yy",},
     {"name":"spr_LEFTactivation_animation","order":1,"path":"sprites/spr_LEFTactivation_animation/spr_LEFTactivation_animation.yy",},
     {"name":"spr_dashR","order":10,"path":"sprites/spr_dashR/spr_dashR.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"obj_dialogue_dynamiteJohnson_approach","order":2,"path":"objects/obj_dialogue_dynamiteJohnson_approach/obj_dialogue_dynamiteJohnson_approach.yy",},
+    {"name":"fnt_gamecontrol","order":2,"path":"fonts/fnt_gamecontrol/fnt_gamecontrol.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_NPC_Albert_portrait","order":2,"path":"sprites/spr_NPC_Albert_portrait/spr_NPC_Albert_portrait.yy",},
     {"name":"spr_ts_sand","order":5,"path":"sprites/spr_ts_sand/spr_ts_sand.yy",},
     {"name":"spr_leftWalljump","order":9,"path":"sprites/spr_leftWalljump/spr_leftWalljump.yy",},
