@@ -164,7 +164,6 @@
     {"id":{"name":"rm_desert4","path":"rooms/rm_desert4/rm_desert4.yy",},},
     {"id":{"name":"scr_dialog","path":"scripts/scr_dialog/scr_dialog.yy",},},
     {"id":{"name":"spr_activation_2","path":"sprites/spr_activation_2/spr_activation_2.yy",},},
-    {"id":{"name":"spr_upspring_animation_strip08","path":"sprites/spr_upspring_animation_strip08/spr_upspring_animation_strip08.yy",},},
     {"id":{"name":"spr_spike_red","path":"sprites/spr_spike_red/spr_spike_red.yy",},},
     {"id":{"name":"spr_title_temp","path":"sprites/spr_title_temp/spr_title_temp.yy",},},
     {"id":{"name":"overworld_4_3png","path":"sprites/overworld_4_3png/overworld_4_3png.yy",},},

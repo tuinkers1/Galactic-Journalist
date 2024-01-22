@@ -25,8 +25,6 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Galactic Journalist",
-    "path": "Galactic Journalist.yyp",
     "name": "upSpring",
     "path": "folders/Sprites/Flash/upSpring.yy",
   },

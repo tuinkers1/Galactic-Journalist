@@ -75,8 +75,8 @@ if (airborne_count < 24) {
 
 #region // NO WALL DETECTION
 
-if (!place_meeting(x-1 or x+1, y, obj_solid)) {
-	//wall_direction = 0;
+if (!place_meeting(x+1, y, obj_solid)) && (!place_meeting(x-1,y,obj_solid)) {
+	wall_direction = 0;
 	//show_debug_message("No wall.")
 	airborne_count += 1;
 	//walljumped = false;
@@ -111,31 +111,23 @@ if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true 
 #endregion
 // wall jump - Iveta/Renardo/Rachel
 
-if wall_direction != wall_last || grounded{
-walljumped = false
+
+
+
+if keyboard_check_pressed(vk_space) && !place_meeting(x,y,obj_solid) && wall_direction != 0 && OnLadder ==false {
+	wall_time = 20
+	wall_last = wall_direction
+
 }
 
-if (airborne != true) {
-	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) && player_quicksand_time == 0{
-		if   (walljumping_state = false) && (walljumped == false) {
-			walljumping_state = true;
-			wall_time = 10
-			walljumped = true
-			alarm[0] = 7;
-		}
-	}
-} 
 
-if wall_time !=0 {
+if wall_time >0 {
+	wall_time -= 1
 	h_move = 0
-	v_move = 0
-	h_move -= walljump_force * wall_direction * 0.040;
-			v_move += player_jumpspeed ;
-			wall_time -=1
-			wall_last = wall_direction
-			
+	v_move += player_jumpspeed * 0.1
+	h_move = -2 * wall_last
 }
-
+ show_debug_message(h_move)
 //show_debug_message(walljumped)
 // collision
 if place_meeting(x+h_move,y,obj_solid){
@@ -288,7 +280,7 @@ if (OnLadder){
  if player_quicksand_time > 0 {
 		player_quicksand_time -= 1
  }
-show_debug_message(player_quicksand_time)
+//show_debug_message(player_quicksand_time)
 
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
