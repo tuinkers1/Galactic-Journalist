@@ -15,7 +15,7 @@ var flash = keyboard_check_pressed(ord("F"))
 
 
 
-// temp ingame changing code
+//temp ingame changing code
 
 if dialogstatus = true {
 	h_move = 0;
@@ -187,7 +187,7 @@ if counter_buffer > 0 {
 		jumped = true
 	}
 }
-		//Dynamic jump height - Niels
+//Dynamic jump height - Niels
 		
 if v_move < 0 and !jump_held && dashallowed = true && !place_meeting(x,y,obj_semisolid) {
 v_move = max(v_move, player_jumpspeed/8);
@@ -207,7 +207,7 @@ if place_meeting(x, y, obj_downspring) || place_meeting(x, y, obj_downspring_ani
 
 
 // horizontal spring mechanic - eddy & niels
-//Left Spring
+//Leftwards Spring
 if place_meeting(x, y, obj_leftspring)|| place_meeting(x, y, obj_leftspring_animation){
 	h_move = -2.3
 }
@@ -231,32 +231,34 @@ if hbounceduration = 0{
 	bounceallowed = true;
 }
 
-////Right Spring
-//if place_meeting(x, y, obj_rightspring)|| place_meeting(x, y, obj_rightspring_animation){
-//	h_move = 2.3
-//}
-//
-//if place_meeting(x, y, obj_rightspring) && bounceallowed = true{
-//	hbounceduration = 15
-//	vbounceduration = 7
-//	bounceallowed = false;
-//}
-//if hbounceduration > 0 {
-//	hbounceduration -= 1;
-//	h_move = 5;
-//}
-//
-//if vbounceduration > 0{
-//	vbounceduration -= 1;
-//	v_move = -2;
-//}
-//	
-//if hbounceduration = 0{
-//	bounceallowed = true;
-//}
+//Rightwards Spring
+if place_meeting(x, y, obj_rightspring)|| place_meeting(x, y, obj_rightspring_animation){
+	h_move = 2.3
+}
+
+if place_meeting(x, y, obj_rightspring) && bounceallowed = true{
+	hbounceduration = 15
+	vbounceduration = 7
+	bounceallowed = false;
+}
+if hbounceduration > 0 {
+	hbounceduration -= 1;
+	h_move = 5;
+}
+
+if vbounceduration > 0{
+	vbounceduration -= 1;
+	v_move = -2;
+}
+	
+if hbounceduration = 0{
+	bounceallowed = true;
+}
 
 
-//ladder - eddy
+
+
+//Ladder - eddy
 if (place_meeting(x, y, obj_ladder)){
 	OnLadder = true	
 }
@@ -274,7 +276,7 @@ if (OnLadder){
 }
 
 
-		
+
 
 
  if player_quicksand_time > 0 {
@@ -282,9 +284,10 @@ if (OnLadder){
  }
 //show_debug_message(player_quicksand_time)
 
-// if ability is pressed, spawn obj_ability - eddy
+
+// Flash mechanic - eddy
 if (flash){
-var _inst = instance_create_layer(x, y, "Instances", obj_flash);
+	instance_create_layer(x, y, "Instances", obj_flash);
 } 
 
 // Quick quicksand effect
