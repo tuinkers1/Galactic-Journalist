@@ -4,7 +4,7 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(x, y, "Put yer controls here!\nPut yer new controls right here!")
+draw_text(x, y, "A or Left Key: Move left.\nD or Right Key: Move Right.\nSpace or Up Key: Jump.\nJump while touching wall: Walljump.\nF: Flash.")
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

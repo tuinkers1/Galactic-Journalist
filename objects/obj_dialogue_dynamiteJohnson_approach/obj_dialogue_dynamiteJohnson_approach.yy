@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_NPC_Albert_dialog_3",
+  "name": "obj_dialogue_dynamiteJohnson_approach",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Albert",
-    "path": "folders/Objects/NPC/Albert.yy",
+    "name": "DynamiteJohnson",
+    "path": "folders/Objects/NPC/DynamiteJohnson.yy",
   },
   "parentObjectId": {
     "name": "obj_dialog_par",

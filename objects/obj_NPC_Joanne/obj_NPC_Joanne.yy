@@ -1,20 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_NPC_DynamiteJohnson_dialog_2",
+  "name": "obj_NPC_Joanne",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "DynamiteJohnson",
-    "path": "folders/Objects/NPC/DynamiteJohnson.yy",
+    "name": "Joanne",
+    "path": "folders/Objects/NPC/Joanne.yy",
   },
-  "parentObjectId": {
-    "name": "obj_dialog_par",
-    "path": "objects/obj_dialog_par/obj_dialog_par.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_Joanne",
+    "path": "sprites/spr_Joanne/spr_Joanne.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

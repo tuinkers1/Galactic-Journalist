@@ -21,8 +21,8 @@
     {"name":"inst_7DE1E15B","path":"rooms/rm_desert6/rm_desert6.yy",},
     {"name":"inst_62E2951A","path":"rooms/rm_desert6/rm_desert6.yy",},
     {"name":"inst_47574A2C","path":"rooms/rm_desert6/rm_desert6.yy",},
-    {"name":"inst_EE45143","path":"rooms/rm_desert6/rm_desert6.yy",},
     {"name":"inst_4BEE570B","path":"rooms/rm_desert6/rm_desert6.yy",},
+    {"name":"inst_7BD94B6A","path":"rooms/rm_desert6/rm_desert6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -53,8 +53,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62E2951A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bgobject","path":"objects/obj_bgobject/obj_bgobject.yy",},"properties":[],"rotation":0.0,"scaleX":1.32,"scaleY":1.32,"x":72.0,"y":-16.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47574A2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_background_move","path":"objects/obj_background_move/obj_background_move.yy",},"properties":[],"rotation":0.0,"scaleX":0.1875,"scaleY":1.0,"x":208.0,"y":64.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EE45143","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_NPC_DynamiteJohnson","path":"objects/obj_NPC_DynamiteJohnson/obj_NPC_DynamiteJohnson.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":96.0,"y":104.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4BEE570B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"cave_bg","path":"objects/cave_bg/cave_bg.yy",},"properties":[],"rotation":0.0,"scaleX":0.171875,"scaleY":1.0,"x":212.0,"y":57.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BD94B6A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_game_new","path":"objects/obj_game_new/obj_game_new.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":56.0,"y":-48.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"desert6_bg","path":"sprites/desert6_bg/desert6_bg.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
