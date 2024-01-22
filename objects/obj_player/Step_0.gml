@@ -201,25 +201,31 @@ v_move = max(v_move, player_jumpspeed/8);
 
 
 // vertical spring mechanic - eddy
+//Upwards Spring
 if place_meeting(x, y, obj_upspring) || place_meeting(x, y, obj_upspring_animation){
  	v_move = -2.3
 }
 
+//Downwards Spring
+if place_meeting(x, y, obj_downspring) || place_meeting(x, y, obj_downspring_animation){
+ 	v_move = 2.3
+}
 
 
 // horizontal spring mechanic - eddy & niels
-if place_meeting(x, y, obj_Hspring){
-	h_move = 20
+//Left Spring
+if place_meeting(x, y, obj_leftspring)|| place_meeting(x, y, obj_leftspring_animation){
+	h_move = -2.3
 }
 
-if place_meeting(x, y, obj_Hspring) && bounceallowed = true{
+if place_meeting(x, y, obj_leftspring) && bounceallowed = true{
 	hbounceduration = 15
 	vbounceduration = 7
 	bounceallowed = false;
 }
 if hbounceduration > 0 {
 	hbounceduration -= 1;
-	h_move = 5;
+	h_move = -5;
 }
 
 if vbounceduration > 0{
@@ -230,6 +236,31 @@ if vbounceduration > 0{
 if hbounceduration = 0{
 	bounceallowed = true;
 }
+
+////Right Spring
+//if place_meeting(x, y, obj_rightspring)|| place_meeting(x, y, obj_rightspring_animation){
+//	h_move = 2.3
+//}
+//
+//if place_meeting(x, y, obj_rightspring) && bounceallowed = true{
+//	hbounceduration = 15
+//	vbounceduration = 7
+//	bounceallowed = false;
+//}
+//if hbounceduration > 0 {
+//	hbounceduration -= 1;
+//	h_move = 5;
+//}
+//
+//if vbounceduration > 0{
+//	vbounceduration -= 1;
+//	v_move = -2;
+//}
+//	
+//if hbounceduration = 0{
+//	bounceallowed = true;
+//}
+
 
 //ladder - eddy
 if (place_meeting(x, y, obj_ladder)){

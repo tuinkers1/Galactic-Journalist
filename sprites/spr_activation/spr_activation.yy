@@ -27,6 +27,8 @@
   "parent": {
     "name": "Galactic Journalist",
     "path": "Galactic Journalist.yyp",
+    "name": "upSpring",
+    "path": "folders/Sprites/Flash/upSpring.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
