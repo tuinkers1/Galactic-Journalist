@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_interactable",
-    "path": "sprites/spr_interactable/spr_interactable.yy",
+    "name": "spr_stablet",
+    "path": "sprites/spr_stablet/spr_stablet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

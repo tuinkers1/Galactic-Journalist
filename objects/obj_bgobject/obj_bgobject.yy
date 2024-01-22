@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bjobject",
-    "path": "sprites/spr_bjobject/spr_bjobject.yy",
+    "name": "house_strip04",
+    "path": "sprites/house_strip04/house_strip04.yy",
   },
   "spriteMaskId": null,
   "visible": true,
