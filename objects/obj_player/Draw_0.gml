@@ -15,5 +15,9 @@ if global.transtime == 0 && sprite_exists(global.old_lvl){
 	sprite_delete(global.old_lvl)
 }
 
-
+if place_meeting(x,y,obj_stablet){
+	draw_set_font(fnt_arial_narrow)
+	draw_text(20,20,"Teststring")
+}
+	
 

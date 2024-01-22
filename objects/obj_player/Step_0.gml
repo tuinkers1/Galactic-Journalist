@@ -12,8 +12,27 @@ var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check_pressed(vk_shift)
 var flash = keyboard_check_pressed(ord("F"))
 
+if h_move < 0 {
+	dir = 0
+}
+	
+if h_move > 0 {
+	dir = 1;
+}
 
+// If Idle
+if (v_move == 0 && h_move == 0) {
+myState = playerState.idle;
+}
 
+if (v_move == 0 && h_move != 0) && grounded{
+	myState = playerState.walking;
+}
+
+// Auto-choose Sprite based on state and direction
+sprite_index = playerSpr[myState][dir];
+
+	
 
 // temp ingame changing code
 
@@ -40,6 +59,7 @@ if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false{
  }
 if dashduration > 0 {
 	dashduration -= 1
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 	dashcooldown = 10
 } 
 if dashduration == 1{
@@ -153,7 +173,7 @@ if grounded {
 }
 else{ 
 	if coyote_counter == 0 {
-   jumped =true
+   jumped = true
 	}
 }
 //show_debug_message("mew")
@@ -161,7 +181,7 @@ else{
 if grounded = false && coyote_counter > 0
 {
 	coyote_counter -= 1
-	if jumped = false && jump 
+	if jumped = false && jump
 	{
 		v_move = player_jumpspeed
 		jumped = true
@@ -175,6 +195,8 @@ else
 		coyote_counter=0
 	}
 
+
+
 //input buffering and jump - Rachel
 if jump{
 	counter_buffer = max_buffer;
@@ -185,6 +207,8 @@ if counter_buffer > 0 {
 		v_move = player_jumpspeed;
 		counter_buffer =0;
 		jumped = true
+		part_particles_create(global.P_System,x+5,y+20,global.Particle1, 100)
+		//myState = playerState.jumping;
 	}
 }
 		//Dynamic jump height - Niels
@@ -220,11 +244,13 @@ if place_meeting(x, y, obj_leftspring) && bounceallowed = true{
 if hbounceduration > 0 {
 	hbounceduration -= 1;
 	h_move = -5;
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 }
 
 if vbounceduration > 0{
 	vbounceduration -= 1;
 	v_move = -2;
+	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
 }
 	
 if hbounceduration = 0{
@@ -281,6 +307,54 @@ if (OnLadder){
 		player_quicksand_time -= 1
  }
 //show_debug_message(player_quicksand_time)
+if (!place_meeting(x-1 or x+1, y, obj_solid)) {
+	wall_direction = 0;
+	show_debug_message("No wall.")
+	airborne_count += 1;
+	//walljumped = false;
+}
+
+// WALL DETECTION TO RIGHT
+
+if (place_meeting(x+1, y, obj_solid)){
+	wall_direction = 1
+	show_debug_message("Right wall.");
+	airborne = 0;
+}
+
+// WALL DETECTION TO LEFT
+
+if (place_meeting(x-1, y, obj_solid)){
+	wall_direction = -1;
+	show_debug_message("Left wall.");
+	airborne = 0;
+	//walljumped = false;
+}
+
+// WALL STICK
+
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+	if (airborne = false) {
+		if (v_move) > 0.5 {
+			v_move = 0.5;
+			part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
+		}
+	}
+}
+
+// wall jump - Iveta/Renardo
+if (airborne != true) {
+	if (keyboard_check_pressed(vk_space) = true) && (!grounded) && (OnLadder = false) {
+		if (wall_direction != 0) && (walljumping_state = false) && (left or right = true) && (walljumped = false) {
+			walljumping_state = true;
+			walljumped = true;
+			h_move -= walljump_force * wall_direction * 0.20;
+			v_move += player_jumpspeed;
+			alarm[0] = 7;
+			part_particles_create(global.P_System,x+5,y+20,global.Particle3, 5)
+		}
+	}
+}
 
 // if ability is pressed, spawn obj_ability - eddy
 if (flash){
