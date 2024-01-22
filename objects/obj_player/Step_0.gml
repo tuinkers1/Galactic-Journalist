@@ -57,7 +57,7 @@ if grounded && !place_meeting(x+2,y,obj_semisolid) {
 }
 if dashduration > 0 {
 	dashduration -= 1
-	part_particles_create(global.P_System,x+5,y+20,global.Particle1, 2)
+	part_particles_create(global.P_System,x,y,global.Particle1, 2)
 }
 
 if dashduration == 1{
@@ -135,7 +135,7 @@ if counter_buffer > 0 {
 		v_move = player_jumpspeed;
 		counter_buffer =0;
 		jumped = true
-		part_particles_create(global.P_System,x+5,y+20,global.Particle1, 100)
+		part_particles_create(global.P_System,x,y+1,global.Particle1, 100)
 		//myState = playerState.jumping;
 	}
 		//Dynamic jump height - Niels

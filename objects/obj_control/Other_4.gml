@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 // Play music based on Room
 switch room {
 	case rm_startmenu: {
