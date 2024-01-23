@@ -27,6 +27,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC","folderPath":"folders/Objects/NPC.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Albert","folderPath":"folders/Objects/NPC/Albert.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"DynamiteJohnson","folderPath":"folders/Objects/NPC/DynamiteJohnson.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Joanne","folderPath":"folders/Objects/NPC/Joanne.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Placeholders (Niels)","folderPath":"folders/Objects/Placeholders (Niels).yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"User Interface","folderPath":"folders/Objects/User Interface.yy",},
@@ -59,7 +60,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"User interface","folderPath":"folders/Sprites/User interface.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Joanne","folderPath":"folders/Objects/NPC/Joanne.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"tile blend final.aseprite","CopyToMask":-1,"filePath":"datafiles",},

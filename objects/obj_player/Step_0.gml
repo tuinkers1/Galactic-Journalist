@@ -101,7 +101,7 @@ if (place_meeting(x-1, y, obj_solid)){
 #endregion
 #region// WALL STICK
 
-if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true {
+if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true && !place_meeting(x,y+5,obj_solid){
 	if (airborne = false) {
 		if (v_move) > 0.5 {
 			v_move = 0.4;
@@ -111,10 +111,10 @@ if (wall_direction = 1) && right = true or (wall_direction = -1) && left = true 
 #endregion
 // wall jump - Iveta/Renardo/Rachel
 
+show_debug_message(place_meeting(x,y+5,obj_solid))
 
 
-
-if keyboard_check_pressed(vk_space) && !place_meeting(x,y,obj_solid) && wall_direction != 0 && OnLadder ==false {
+if keyboard_check_pressed(vk_space) && !place_meeting(x,y+5,obj_solid) && wall_direction != 0 && OnLadder ==false {
 	wall_time = 20
 	wall_last = wall_direction
 
@@ -127,8 +127,7 @@ if wall_time >0 {
 	v_move += player_jumpspeed * 0.1
 	h_move = -2 * wall_last
 }
- show_debug_message(h_move)
-//show_debug_message(walljumped)
+
 // collision
 if place_meeting(x+h_move,y,obj_solid){
 while(not place_meeting(x + sign(h_move),y,obj_solid))
