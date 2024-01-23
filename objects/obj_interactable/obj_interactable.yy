@@ -2,15 +2,12 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_interactable",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "In Game Help",
-    "path": "folders/Objects/In Game Help.yy",
+    "name": "Placeholders (Niels)",
+    "path": "folders/Objects/Placeholders (Niels).yy",
   },
   "parentObjectId": null,
   "persistent": false,

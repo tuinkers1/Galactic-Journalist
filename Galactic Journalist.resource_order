@@ -17,11 +17,5 @@
     {"name":"spr_playeridleleft","order":8,"path":"sprites/spr_playeridleleft/spr_playeridleleft.yy",},
     {"name":"spr_playerwalkingright","order":7,"path":"sprites/spr_playerwalkingright/spr_playerwalkingright.yy",},
     {"name":"obj_Particle_Setup","order":4,"path":"objects/obj_Particle_Setup/obj_Particle_Setup.yy",},
-  "FolderOrderSettings": [
-    {"name":"In Game Help","order":2,"path":"folders/Objects/In Game Help.yy",},
-  ],
-  "ResourceOrderSettings": [
-    {"name":"obj_walljump_help_text","order":2,"path":"objects/obj_walljump_help_text/obj_walljump_help_text.yy",},
-    {"name":"obj_interactable","order":1,"path":"objects/obj_interactable/obj_interactable.yy",},
   ],
 }

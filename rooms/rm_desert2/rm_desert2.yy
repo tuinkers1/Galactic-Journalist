@@ -28,6 +28,7 @@
     {"name":"inst_874A529","path":"rooms/rm_desert2/rm_desert2.yy",},
     {"name":"inst_1F07748","path":"rooms/rm_desert2/rm_desert2.yy",},
     {"name":"inst_29DE3174","path":"rooms/rm_desert2/rm_desert2.yy",},
+    {"name":"inst_5D710777","path":"rooms/rm_desert2/rm_desert2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -63,6 +64,7 @@
 -551,-2147483648,-3,1,-184,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"spikes","path":"tilesets/spikes/spikes.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29DE3174","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_game_new","path":"objects/obj_game_new/obj_game_new.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":-32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D710777","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_NPC_Joanne","path":"objects/obj_NPC_Joanne/obj_NPC_Joanne.yy",},"properties":[],"rotation":0.0,"scaleX":0.475,"scaleY":0.55,"x":284.5,"y":104.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"outerworld_bg3_sheet","path":"sprites/outerworld_bg3_sheet/outerworld_bg3_sheet.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":-70,"y":0,},
   ],
