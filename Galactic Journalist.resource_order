@@ -77,5 +77,13 @@
     {"name":"tree_4","order":4,"path":"sprites/tree_4/tree_4.yy",},
     {"name":"rock_3","order":22,"path":"sprites/rock_3/rock_3.yy",},
     {"name":"crystal_3","order":3,"path":"sprites/crystal_3/crystal_3.yy",},
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_presstocontinue","order":4,"path":"objects/obj_presstocontinue/obj_presstocontinue.yy",},
+    {"name":"spr_ladder","order":1,"path":"sprites/spr_ladder/spr_ladder.yy",},
+    {"name":"obj_cutscene2","order":1,"path":"objects/obj_cutscene2/obj_cutscene2.yy",},
+    {"name":"obj_cutscene4","order":3,"path":"objects/obj_cutscene4/obj_cutscene4.yy",},
+    {"name":"Sprite82","order":1,"path":"sprites/Sprite82/Sprite82.yy",},
+    {"name":"obj_cutscene3","order":2,"path":"objects/obj_cutscene3/obj_cutscene3.yy",},
   ],
 }

@@ -1,16 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_LadderActivation",
+  "name": "obj_presstocontinue",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_flash","path":"objects/obj_flash/obj_flash.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Flash",
-    "path": "folders/Objects/Flash.yy",
+    "name": "Cutscenes",
+    "path": "folders/Objects/Cutscenes.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_activation_2",
-    "path": "sprites/spr_activation_2/spr_activation_2.yy",
+    "name": "Sprite82",
+    "path": "sprites/Sprite82/Sprite82.yy",
   },
   "spriteMaskId": null,
   "visible": true,
