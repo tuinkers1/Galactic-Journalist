@@ -21,7 +21,6 @@
     {"name":"inst_25A83167","path":"rooms/rm_desert5/rm_desert5.yy",},
     {"name":"inst_23968753","path":"rooms/rm_desert5/rm_desert5.yy",},
     {"name":"inst_13521856","path":"rooms/rm_desert5/rm_desert5.yy",},
-    {"name":"inst_11F27F24","path":"rooms/rm_desert5/rm_desert5.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -38,7 +37,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25A83167","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dash_grant","path":"objects/obj_dash_grant/obj_dash_grant.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":13.0,"x":64.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23968753","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dynamiteJohnson_near","path":"objects/obj_dynamiteJohnson_near/obj_dynamiteJohnson_near.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":13.0,"x":184.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13521856","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_die","path":"objects/obj_die/obj_die.yy",},"properties":[],"rotation":0.0,"scaleX":8.0,"scaleY":1.0,"x":96.0,"y":136.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11F27F24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":40.0,"y":56.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EA6DCC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_NPC_DynamiteJohnson","path":"objects/obj_NPC_DynamiteJohnson/obj_NPC_DynamiteJohnson.yy",},"properties":[],"rotation":0.0,"scaleX":0.58,"scaleY":0.5243902,"x":200.93161,"y":96.0,},
