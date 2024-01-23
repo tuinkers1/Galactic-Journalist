@@ -12,8 +12,30 @@ var grounded = place_meeting(x,y+1,obj_par_solid)
 var dashing = keyboard_check_pressed(vk_shift)
 var flash = keyboard_check_pressed(ord("F"))
 
+if h_move < 0 {
+	dir = 0
+}
+	
+if h_move > 0 {
+	dir = 1;
+}
+
+// If Idle
+if (v_move == 0 && h_move == 0) {
+myState = playerState.idle;
+}
+
+if (v_move == 0 && h_move != 0) && grounded && dashduration == 0{
+	myState = playerState.walking;
+}
 
 
+if keyboard_check(ord("P")){
+	dashgranted = true;
+}
+
+// Automate sprites based on state and direction
+//sprite_index = playerSpr[myState][dir];
 
 // temp ingame changing code
 
@@ -37,6 +59,7 @@ if grounded && !place_meeting(x+2,y,obj_par_solid) && dialogstatus = false && da
 	dashdirection = point_direction(0, 0, right-left, down-up)
 	h_move = lengthdir_x(dashspeed, dashdirection)
 	v_move = lengthdir_y(dashspeed, dashdirection)
+	//part_particles_create(global.P_System,x,y+1,global.Particle1, 2)
  }
 if dashduration > 0 {
 	dashduration -= 1
@@ -164,6 +187,7 @@ if grounded = false && coyote_counter > 0
 	{
 		v_move = player_jumpspeed
 		jumped = true
+		//part_particles_create(global.P_System,x,y+1,global.Particle1, 100)
 	}
 }
 else 

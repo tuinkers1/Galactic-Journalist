@@ -69,3 +69,23 @@ vbounceduration = 0;
 horizontal_grav = -0.12;
 bounceallowed = true;
 
+dir = 0;
+
+myState = playerState.idle;
+
+// Player Sprite array [myState][dir]
+// Idle
+playerSpr[playerState.idle][0] = spr_playeridleleft;
+playerSpr[playerState.idle][1] = spr_playeridleright;
+
+//Walking
+playerSpr[playerState.walking][0] = spr_walkingleft;
+playerSpr[playerState.walking][1] = spr_walkingright;
+/*
+//Jumping
+playerSpr[playerState.walking][0] = spr_jumpingleft;
+playerSpr[playerState.walking][1] = spr_jumpingright;
+
+//Falling
+playerSpr[playerState.falling][0] = spr_fallingleft;
+playerSpr[playerState.falling][1] = spr_fallingright;
